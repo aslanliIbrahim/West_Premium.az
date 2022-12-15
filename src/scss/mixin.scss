@@ -1,0 +1,46 @@
+@mixin flexible($flex:null,$jus:null, $aling:null, $direction:null){
+    display: $flex;
+    justify-content: $jus;
+    align-items: $aling;
+    flex-direction:$direction;
+}
+@mixin textFont(
+  $f_size: null,
+  $f_color: null,
+  $text_decaration: null,
+  $text_align: null,
+  $margin: null,
+  $padding: null,
+  $background: null,
+  $text_weight: null,
+  $line_height: null,
+  $text_decaration: null,
+  $transition: null,
+  $transform:null
+) {
+  font-size: $f_size;
+  font-weight: $text_weight;
+  line-height: $line_height;
+  color: $f_color;
+  text-decoration: $text_decaration;
+  margin: $margin;
+  padding: $padding;
+  background-color: $background;
+  text-align: $text_align;
+  text-decoration: $text_decaration;
+  transition: $transition;
+  text-transform: $transform;
+}
+@mixin ul(
+  $pad: null,
+  $mar: null,
+  $list-style: null,
+  $width: null,
+  $height: null
+) {
+  padding: $pad;
+  margin: $mar;
+  list-style: $list-style;
+  width: $width;
+  height: $height;
+}
