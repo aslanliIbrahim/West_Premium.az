@@ -1,0 +1,24 @@
+.nav-btn{
+    text-decoration: none;
+    transition: 0.3s all ease-in-out;
+    &:hover{
+        @include _button(
+            $bg_color:$color,
+            $color:$bg-color,
+        );
+    }
+    @include flexible(
+        flex,
+        center,
+        center,
+        row
+    );
+    @include _button(
+        $height:36px,
+        $font_size:18px,
+        $bg_color:$bg-color,
+        $color:$color,
+        $padding:8px 20px,
+        $border_radius:22px
+    );
+}

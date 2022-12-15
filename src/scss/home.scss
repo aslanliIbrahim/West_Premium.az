@@ -1,3 +1,26 @@
 .destkop-header{
-    
+    .header-left{
+        border: 1px solid red;
+        @include flexible(
+            $flex:flex,
+            $aling:center,
+            $direction:row
+        );
+    }
+    .logo-area{
+        display: block;
+        text-align: center;
+        img{
+            max-width: 100%;
+        }
+    }
+    .header-right{
+        @include flexible(
+            flex,
+            center,
+            flex-end,
+            row
+        );
+        flex-wrap: wrap;
+    }
 }

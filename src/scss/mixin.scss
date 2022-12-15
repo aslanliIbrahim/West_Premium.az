@@ -44,3 +44,70 @@
   width: $width;
   height: $height;
 }
+@mixin padding($padding: null) {
+    padding: $padding;
+  }
+  @mixin margin($margin: null) {
+    margin: $margin;
+  }
+  @mixin border($border: null, $border-radius: null) {
+    border: $border;
+    border-radius: $border-radius;
+  }
+
+
+  @mixin Img(
+  $img_width: null,
+  $img_height: null,
+  $object_fit: null,
+  $boder: null,
+  $border_radius: null,
+  $margin: null,
+  $b_shadow: null
+) {
+  width: $img_width;
+  height: $img_height;
+  margin: $margin;
+  border-radius: $border_radius;
+  box-shadow: $b_shadow;
+  border: $boder;
+  object-fit: $object_fit;
+}
+@mixin Inputs(
+  $width: null,
+  $padding: null,
+  $margin: null,
+  $border_radius: null,
+  $color: null,
+  $height: null
+) {
+  width: $width;
+  margin: $margin;
+  padding: $padding;
+  border-radius: $border_radius;
+  color: $color;
+  height: $height;
+}
+@mixin _button(
+  $width: null,
+  $height: null,
+  $padding: null,
+  $margin: null,
+  $border_radius: null,
+  $color: null,
+  $bg_color: null,
+  $border: null,
+  $text_align: null,
+  $font_size: null
+) {
+  width: $width;
+  margin: $margin;
+  padding: $padding;
+  border-radius: $border_radius;
+  color: $color;
+  background-color: $bg_color;
+  border: $border;
+  text-align: $text_align;
+  height: $height;
+  font-size: $font_size;
+}

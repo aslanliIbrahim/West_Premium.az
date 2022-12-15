@@ -1,3 +1,39 @@
+.nav-btn {
+  text-decoration: none;
+  transition: 0.3s all ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 8px 20px;
+  border-radius: 22px;
+  color: #43B5E4;
+  background-color: #203E65;
+  height: 36px;
+  font-size: 18px; }
+  .nav-btn:hover {
+    color: #203E65;
+    background-color: #43B5E4; }
+
+.destkop-header .header-left {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  flex-direction: row; }
+
+.destkop-header .logo-area {
+  display: block;
+  text-align: center; }
+  .destkop-header .logo-area img {
+    max-width: 100%; }
+
+.destkop-header .header-right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
 * {
   margin: 0;
   padding: 0;
