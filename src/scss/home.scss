@@ -1,11 +1,39 @@
 .destkop-header{
+    padding: 60px 0 30px 0;
+    position: relative;
+    z-index: 8;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+        z-index: -1;
+        top: 0;
+    }
     .header-left{
-        border: 1px solid red;
         @include flexible(
             $flex:flex,
             $aling:center,
             $direction:row
         );
+        .menu-btn{
+            @include flexible(
+                $flex:inline-flex,
+                $aling:center
+            );
+            @include padding(8px 14px);
+            @include border(1px solid $bg-color, 22px);
+            @include textFont($f_color:$bg-color);
+            @include margin(0 30px 0 0);
+            @include _button($height:36px);
+            cursor: pointer;
+            text-decoration: none;
+            img{
+                max-width: 100%;
+                margin-right: 10px;
+            }
+        }
     }
     .logo-area{
         display: block;
@@ -17,10 +45,60 @@
     .header-right{
         @include flexible(
             flex,
-            center,
             flex-end,
+            center,
             row
         );
         flex-wrap: wrap;
+        ul{
+            @include flexible(
+                $flex:flex,
+                $aling:center,
+            );
+            @include ul(
+                $list-style:none,
+                $pad:0,
+                $mar:0
+            );
+            @include margin(0 0 0 15px);
+            li{
+                @include margin(0 0 0 25px);
+                a{
+                    text-decoration: none;
+                    i{
+                        color: $bg-color;
+                        width: 27px;
+                        height: 27px;
+                        font-size: 27px;
+                    }
+                }
+            }
+        }
+        .whatsapp{
+            @include flexible(
+                inline-flex,
+                center,
+                center,
+                row
+            );
+            @include _button(
+                $width:41px,
+                $height:41px,
+                $bg_color:$bg-color,
+                $border_radius:50%,
+                $margin:0 0 0 30px
+            );
+        }
+        .phone-care{
+            @include textFont(
+                $f_size:18px,
+                $text_weight:700,
+                $f_color:$bg_color,
+                $margin:10px 0 0 30px
+            );
+            letter-spacing: 0.26em;
+            text-decoration: none;
+        }
+
     }
 }
