@@ -90,6 +90,18 @@
       letter-spacing: 0.26em;
       text-decoration: none; }
 
+#index-one {
+  position: relative;
+  min-height: 100vh;
+  z-index: 1;
+  background-color: #ddf6f7; }
+  #index-one .index-one-bg {
+    position: absolute;
+    top: -190px;
+    z-index: -1; }
+    #index-one .index-one-bg img {
+      max-width: 100%; }
+
 * {
   margin: 0;
   padding: 0;

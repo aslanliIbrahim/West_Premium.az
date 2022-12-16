@@ -102,3 +102,17 @@
 
     }
 }
+#index-one{
+    position: relative;
+    min-height: 100vh;
+    z-index: 1;
+    background-color: #ddf6f7;
+    .index-one-bg{
+        position: absolute;
+        top: -190px;
+        z-index: -1;
+        img{
+            max-width: 100%;
+        }
+    }
+}
