@@ -107,6 +107,50 @@
     min-height: 100vh;
     z-index: 1;
     background-color: #ddf6f7;
+    .index-one-content{
+        position: absolute;
+        top: 10%;
+        width: 45%;
+        h3{
+            @include textFont(
+                $f_size:44px,
+                $f_color:$white,
+                $text_weight:400,
+                $margin: 0 0 4px 0,
+                $line_height:1
+            );
+            @media (max-width:1700px) {
+                @include textFont(
+                    $f_size:28px
+                );
+            }
+        }
+        h1{
+            @include textFont(
+                $f_size:97px,
+                $text_weight:bold,
+                $margin: 0 0 25px 0,
+                $line_height:97%,
+                $f_color:$white
+            );
+            @media (max-width:1700px) {
+                @include textFont(
+                    $f_size:60px
+                );
+            }
+        }
+        .content-desc{
+            p{
+                @include textFont(
+                    $line_height:118%,
+                    $margin:0 0 50px 0,
+                    $f_color:$white,
+                    $f_size:20px
+                );
+            }
+            
+        }
+    }
     .index-one-bg{
         position: absolute;
         top: -190px;

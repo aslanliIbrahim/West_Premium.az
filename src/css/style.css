@@ -95,6 +95,33 @@
   min-height: 100vh;
   z-index: 1;
   background-color: #ddf6f7; }
+  #index-one .index-one-content {
+    position: absolute;
+    top: 10%;
+    width: 45%; }
+    #index-one .index-one-content h3 {
+      font-size: 44px;
+      font-weight: 400;
+      line-height: 1;
+      color: white;
+      margin: 0 0 4px 0; }
+      @media (max-width: 1700px) {
+        #index-one .index-one-content h3 {
+          font-size: 28px; } }
+    #index-one .index-one-content h1 {
+      font-size: 97px;
+      font-weight: bold;
+      line-height: 97%;
+      color: white;
+      margin: 0 0 25px 0; }
+      @media (max-width: 1700px) {
+        #index-one .index-one-content h1 {
+          font-size: 60px; } }
+    #index-one .index-one-content .content-desc p {
+      font-size: 20px;
+      line-height: 118%;
+      color: white;
+      margin: 0 0 50px 0; }
   #index-one .index-one-bg {
     position: absolute;
     top: -190px;
