@@ -15,6 +15,44 @@
     color: #203E65;
     background-color: #43B5E4; }
 
+.circle-btn {
+  position: absolute;
+  background: rgba(31, 43, 71, 0.44);
+  backdrop-filter: blur(11px);
+  line-height: 118%;
+  letter-spacing: 0.42em;
+  transition: all .3s ease;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 155px;
+  border-radius: 50%;
+  height: 155px;
+  font-size: 20px;
+  font-weight: 300;
+  color: white; }
+  .circle-btn:hover {
+    background: rgba(0, 196, 208, 0.44); }
+  .circle-btn::before {
+    position: absolute;
+    content: '';
+    width: 180px;
+    height: 180px;
+    border: 1px solid white;
+    border-radius: 50%; }
+  .circle-btn::after {
+    content: url("../img/main/arrow-down.svg");
+    position: absolute;
+    right: 50%;
+    bottom: -50px;
+    transform: translateX(50%); }
+  @media (max-width: 1700px) {
+    .circle-btn {
+      bottom: unset;
+      top: 35%; } }
+
 .destkop-header {
   padding: 60px 0 30px 0;
   position: relative;
@@ -122,6 +160,8 @@
       line-height: 118%;
       color: white;
       margin: 0 0 50px 0; }
+  #index-one .index-content-btn {
+    right: 35px; }
   #index-one .index-one-bg {
     position: absolute;
     top: -190px;

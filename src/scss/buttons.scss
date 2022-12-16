@@ -22,3 +22,50 @@
         $border_radius:22px
     );
 }
+.circle-btn{
+    position: absolute;
+    background: rgba(31, 43, 71, 0.44);
+    backdrop-filter: blur(11px);
+    line-height: 118%;
+    letter-spacing: 0.42em;
+    transition: all .3s ease;
+    text-decoration: none;
+    &:hover{
+        background: rgba(0, 196, 208, 0.44);
+    }
+    @include flexible(
+        flex,
+        center,
+        center,
+        row
+    );
+    @include _button(
+        $width:155px,
+        $height:155px,
+        $border_radius:50%
+    );
+    @include textFont(
+        $text_weight:300,
+        $f_size:20px,
+        $f_color:$white
+    );
+    &::before{
+        position: absolute;
+        content: '';
+        width: 180px;
+        height: 180px;
+        @include border(1px solid $white,50%);
+    }
+    &::after{
+        content: url("../img/main/arrow-down.svg");
+        position: absolute;
+        right: 50%;
+        bottom: -50px;
+        transform: translateX(50%);
+    }
+    @media (max-width:1700px) {
+        bottom: unset;
+        top:35%
+    }
+    
+}
