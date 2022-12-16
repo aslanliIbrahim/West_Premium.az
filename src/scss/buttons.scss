@@ -30,6 +30,7 @@
     letter-spacing: 0.42em;
     transition: all .3s ease;
     text-decoration: none;
+    text-transform: uppercase;
     &:hover{
         background: rgba(0, 196, 208, 0.44);
     }
@@ -45,7 +46,7 @@
         $border_radius:50%
     );
     @include textFont(
-        $text_weight:300,
+        $text_weight:500,
         $f_size:20px,
         $f_color:$white
     );
@@ -68,4 +69,41 @@
         top:35%
     }
     
+}
+.moving-btn{
+    letter-spacing: 0.475em;
+    position: relative;
+    transition: all .3s ease;
+    display: inline-block;
+    text-decoration: none;
+    z-index: 2;
+    @include textFont(
+        $line_height:118%,
+        $f_color:$white,
+    );
+    &::before{
+        content: url("../img/main/arrow.svg");
+        right: -65px;
+        top: -2px;
+        position: absolute;
+        transition: all .3s ease;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid $white;
+        right: -80px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all .3s ease;
+    }
+    &:hover{
+        padding-left: 10px;
+        &::before{
+            right: -75px;
+        }
+    }
 }

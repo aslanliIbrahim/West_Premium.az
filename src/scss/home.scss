@@ -1,7 +1,7 @@
 .destkop-header{
     padding: 60px 0 30px 0;
     position: relative;
-    z-index: 8;
+    z-index: 102;
     &::before{
         content: "";
         position: absolute;
@@ -105,8 +105,8 @@
 #index-one{
     position: relative;
     min-height: 100vh;
-    z-index: 1;
-    background-color: #ddf6f7;
+    z-index: 101;
+    // background-color: #ddf6f7;
     .index-one-content{
         position: absolute;
         top: 10%;
@@ -152,7 +152,7 @@
         }
     }
     .index-content-btn{
-        right: 35px;
+        right: 5%;
     }
     .index-one-bg{
         position: absolute;
@@ -162,4 +162,67 @@
             max-width: 100%;
         }
     }
+}
+#life-component{
+    position: relative;
+    padding-top: 180px;
+    margin-top: -380px;
+    z-index: 99;
+    &::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #ddf6f7;
+        // background: -webkit-gradient(linear, left top, left bottom, from(#C4F0F1), to(rgba(196, 196, 196, 0)));
+        // background: linear-gradient(180deg, #C4F0F1 0%, rgba(196, 196, 196, 0) 100%);
+        top: 0;
+        z-index: -99999;
+    }
+    .life-component-left{
+        img{
+            max-width: 100%;
+        }
+    }
+    .right-component{
+        position: relative;
+        .life-component-right{
+            position: absolute;
+            right: 35%;
+            width: 68%;
+            bottom: 4%;
+            text-align: center;
+            .first-right-desc{
+                font-style: italic;
+                @include textFont(
+                    $f_size:34px,
+                    $f_color:$yellow-color,
+                    $line_height:118%,
+                    $margin:0 0 20px 0,
+                    $text_weight:bold,
+                    $text_align:center
+                );
+            }
+            .second-right-desc{
+                @include textFont(
+                    $f_color:$black,
+                    $margin:0 0 25px 0,
+                    $text_align:center,
+                    $text_weight:400,
+                    $line_height:1.5,
+                    $f_size:16px
+                );
+            }
+            .life-component-btn{
+                color: $black;
+                &::before{
+                    content: url("../img/main/arrow-black.svg");
+                }
+                &::after{
+                    border: 1px solid $black !important;
+                }
+            }
+        }
+    }
+    
 }

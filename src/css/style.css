@@ -23,6 +23,7 @@
   letter-spacing: 0.42em;
   transition: all .3s ease;
   text-decoration: none;
+  text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +32,7 @@
   border-radius: 50%;
   height: 155px;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 500;
   color: white; }
   .circle-btn:hover {
     background: rgba(0, 196, 208, 0.44); }
@@ -53,10 +54,41 @@
       bottom: unset;
       top: 35%; } }
 
+.moving-btn {
+  letter-spacing: 0.475em;
+  position: relative;
+  transition: all .3s ease;
+  display: inline-block;
+  text-decoration: none;
+  z-index: 2;
+  line-height: 118%;
+  color: white; }
+  .moving-btn::before {
+    content: url("../img/main/arrow.svg");
+    right: -65px;
+    top: -2px;
+    position: absolute;
+    transition: all .3s ease; }
+  .moving-btn::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    right: -80px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .3s ease; }
+  .moving-btn:hover {
+    padding-left: 10px; }
+    .moving-btn:hover::before {
+      right: -75px; }
+
 .destkop-header {
   padding: 60px 0 30px 0;
   position: relative;
-  z-index: 8; }
+  z-index: 102; }
   .destkop-header::before {
     content: "";
     position: absolute;
@@ -131,8 +163,7 @@
 #index-one {
   position: relative;
   min-height: 100vh;
-  z-index: 1;
-  background-color: #ddf6f7; }
+  z-index: 101; }
   #index-one .index-one-content {
     position: absolute;
     top: 10%;
@@ -161,13 +192,58 @@
       color: white;
       margin: 0 0 50px 0; }
   #index-one .index-content-btn {
-    right: 35px; }
+    right: 5%; }
   #index-one .index-one-bg {
     position: absolute;
     top: -190px;
     z-index: -1; }
     #index-one .index-one-bg img {
       max-width: 100%; }
+
+#life-component {
+  position: relative;
+  padding-top: 180px;
+  margin-top: -380px;
+  z-index: 99; }
+  #life-component::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #ddf6f7;
+    top: 0;
+    z-index: -99999; }
+  #life-component .life-component-left img {
+    max-width: 100%; }
+  #life-component .right-component {
+    position: relative; }
+    #life-component .right-component .life-component-right {
+      position: absolute;
+      right: 35%;
+      width: 68%;
+      bottom: 4%;
+      text-align: center; }
+      #life-component .right-component .life-component-right .first-right-desc {
+        font-style: italic;
+        font-size: 34px;
+        font-weight: bold;
+        line-height: 118%;
+        color: #D2A646;
+        margin: 0 0 20px 0;
+        text-align: center; }
+      #life-component .right-component .life-component-right .second-right-desc {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #283037;
+        margin: 0 0 25px 0;
+        text-align: center; }
+      #life-component .right-component .life-component-right .life-component-btn {
+        color: #283037; }
+        #life-component .right-component .life-component-right .life-component-btn::before {
+          content: url("../img/main/arrow-black.svg"); }
+        #life-component .right-component .life-component-right .life-component-btn::after {
+          border: 1px solid #283037 !important; }
 
 * {
   margin: 0;
