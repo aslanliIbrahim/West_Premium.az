@@ -131,8 +131,7 @@
       align-items: center;
       padding: 0;
       margin: 0;
-      list-style: none;
-      margin: 0 0 0 15px; }
+      list-style: none; }
       .destkop-header .header-right ul li {
         margin: 0 0 0 25px; }
         .destkop-header .header-right ul li a {
@@ -159,11 +158,43 @@
       margin: 10px 0 0 30px;
       letter-spacing: 0.26em;
       text-decoration: none; }
+  @media (max-width: 992px) {
+    .destkop-header {
+      display: none; } }
+
+.mobile-header #for-mob-row {
+  padding: 20px 0px; }
+  .mobile-header #for-mob-row .mob-logo {
+    max-width: 180px; }
+  .mobile-header #for-mob-row .mob-nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
+    .mobile-header #for-mob-row .mob-nav-right a {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: row;
+      width: 100%;
+      font-size: 18px;
+      text-decoration: none;
+      text-decoration: none;
+      text-transform: uppercase; }
+      .mobile-header #for-mob-row .mob-nav-right a img {
+        margin: 0 15px 0 0; }
+  @media (max-width: 992px) {
+    .mobile-header #for-mob-row {
+      display: flex; } }
+  @media (min-width: 992px) {
+    .mobile-header #for-mob-row {
+      display: none; } }
 
 #index-one {
   position: relative;
   min-height: 100vh;
-  z-index: 101; }
+  z-index: 101;
+  background-color: #ddf6f7; }
   #index-one .index-one-content {
     position: absolute;
     top: 10%;
@@ -199,6 +230,17 @@
     z-index: -1; }
     #index-one .index-one-bg img {
       max-width: 100%; }
+
+@media (min-width: 992px) {
+  #index-one-mobile {
+    display: none; } }
+
+@media (max-width: 992px) {
+  #index-one-mobile {
+    display: block; }
+    #index-one-mobile a img {
+      width: 100%;
+      min-width: 180px; } }
 
 #life-component {
   position: relative;
@@ -244,6 +286,17 @@
           content: url("../img/main/arrow-black.svg"); }
         #life-component .right-component .life-component-right .life-component-btn::after {
           border: 1px solid #283037 !important; }
+  @media (max-width: 992px) {
+    #life-component {
+      margin-top: 0px;
+      padding-top: 0px; }
+      #life-component::before {
+        background-color: white; }
+      #life-component .right-component .life-component-right {
+        position: unset;
+        width: 100%; }
+        #life-component .right-component .life-component-right .life-component-btn {
+          display: none; } }
 
 * {
   margin: 0;

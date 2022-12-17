@@ -60,7 +60,7 @@
                 $pad:0,
                 $mar:0
             );
-            @include margin(0 0 0 15px);
+            // @include margin(0 0 0 15px);
             li{
                 @include margin(0 0 0 25px);
                 a{
@@ -101,12 +101,56 @@
         }
 
     }
+    @media (max-width:992px) {
+        display: none;
+    }
+}
+.mobile-header{
+    #for-mob-row{
+        @include padding(20px 0px);
+        .mob-logo{
+            max-width: 180px;
+        }
+        .mob-nav-right{
+            @include flexible(
+                flex,
+                center,
+                center,
+                row
+            );
+            a{
+                @include flexible(
+                    flex,
+                    flex-end,
+                    center,
+                    row
+                );
+                width: 100%;
+                @include textFont(
+                    $text_decaration:none,
+                    $f_size:18px,
+                    $transform:uppercase
+                );
+                img{
+                    @include Img(
+                       $margin:0 15px 0 0
+                    );
+                }
+            }
+        }
+        @media (max-width:992px) {
+            display: flex;
+        }
+        @media (min-width:992px) {
+            display: none;
+        }
+    }
 }
 #index-one{
     position: relative;
     min-height: 100vh;
     z-index: 101;
-    // background-color: #ddf6f7;
+    background-color: #ddf6f7;
     .index-one-content{
         position: absolute;
         top: 10%;
@@ -160,6 +204,20 @@
         z-index: -1;
         img{
             max-width: 100%;
+        }
+    }
+}
+#index-one-mobile{
+    @media (min-width:992px) {
+        display: none;
+    }
+    @media (max-width:992px) {
+        display: block;
+        a{
+            img{
+                width: 100%;
+                min-width: 180px;
+            }
         }
     }
 }
@@ -220,6 +278,23 @@
                 }
                 &::after{
                     border: 1px solid $black !important;
+                }
+            }
+        }
+    }
+
+    @media (max-width:992px) {
+        margin-top: 0px;
+        padding-top: 0px;
+        &::before{
+            background-color: $white;
+        }
+        .right-component{
+            .life-component-right{
+                position: unset;
+                width: 100%;
+                .life-component-btn{
+                    display: none;
                 }
             }
         }
