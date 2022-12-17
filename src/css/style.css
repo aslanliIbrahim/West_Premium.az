@@ -24,6 +24,7 @@
   transition: all .3s ease;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,8 +194,7 @@
 #index-one {
   position: relative;
   min-height: 100vh;
-  z-index: 101;
-  background-color: #ddf6f7; }
+  z-index: 101; }
   #index-one .index-one-content {
     position: absolute;
     top: 10%;
@@ -224,12 +224,19 @@
       margin: 0 0 50px 0; }
   #index-one .index-content-btn {
     right: 5%; }
+    @media (min-width: 1920px) {
+      #index-one .index-content-btn {
+        top: 30%; } }
   #index-one .index-one-bg {
     position: absolute;
     top: -190px;
     z-index: -1; }
     #index-one .index-one-bg img {
       max-width: 100%; }
+      @media (min-width: 1920px) {
+        #index-one .index-one-bg img {
+          width: 1920px;
+          object-fit: contain; } }
 
 @media (min-width: 992px) {
   #index-one-mobile {
@@ -252,7 +259,7 @@
     content: "";
     width: 100%;
     height: 100%;
-    background-color: #ddf6f7;
+    background: linear-gradient(180deg, #C4F0F1 0%, rgba(196, 196, 196, 0) 100%);
     top: 0;
     z-index: -99999; }
   #life-component .life-component-left img {
@@ -297,6 +304,74 @@
         width: 100%; }
         #life-component .right-component .life-component-right .life-component-btn {
           display: none; } }
+
+#location-area {
+  position: relative; }
+  @media (max-width: 992px) {
+    #location-area .location-bg {
+      display: none; } }
+  #location-area .location-bg img {
+    max-width: 100%;
+    width: 100%; }
+  #location-area .location-mobile-bg {
+    display: none; }
+    @media (max-width: 992px) {
+      #location-area .location-mobile-bg {
+        display: block; }
+        #location-area .location-mobile-bg img {
+          width: 100%; } }
+  #location-area .location-content {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 50%;
+    text-align: center; }
+    #location-area .location-content .location-sub-title {
+      font-size: 24px;
+      line-height: 118%;
+      color: #203E65;
+      margin: 40px 0 0 0;
+      text-transform: uppercase;
+      translate: 80px, 80px;
+      letter-spacing: 0.57em;
+      line-height: 118%; }
+    #location-area .location-content .location-title-area {
+      font-size: 240px;
+      font-family: "Allison",sans-serif; }
+    @media (max-width: 992px) {
+      #location-area .location-content {
+        width: 100%;
+        left: 0;
+        top: unset;
+        bottom: 0; }
+        #location-area .location-content .location-sub-title {
+          display: none; }
+        #location-area .location-content .location-title-area {
+          font-size: 80px; }
+        #location-area .location-content .location-desc {
+          width: 100%;
+          transform: unset; }
+        #location-area .location-content .location-mobile-bg {
+          display: block; }
+          #location-area .location-content .location-mobile-bg img {
+            width: 100%; } }
+  #location-area .location-desc {
+    width: 70%;
+    font-size: 20px;
+    color: #203E65;
+    transform: translateX(20%); }
+  #location-area .location-btn {
+    position: absolute;
+    font-size: 16px !important;
+    top: unset  !important;
+    right: 20% !important;
+    bottom: 30% !important; }
+    #location-area .location-btn::after {
+      content: url("../img/main/right-ok.svg") !important;
+      bottom: 40px !important; }
+    @media (max-width: 992px) {
+      #location-area .location-btn {
+        display: none; } }
 
 * {
   margin: 0;

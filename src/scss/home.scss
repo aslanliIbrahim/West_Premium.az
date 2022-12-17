@@ -150,7 +150,7 @@
     position: relative;
     min-height: 100vh;
     z-index: 101;
-    background-color: #ddf6f7;
+    // background-color: #ddf6f7;
     .index-one-content{
         position: absolute;
         top: 10%;
@@ -197,6 +197,9 @@
     }
     .index-content-btn{
         right: 5%;
+        @media (min-width:1920px) {
+            top:30%;
+        }
     }
     .index-one-bg{
         position: absolute;
@@ -204,6 +207,10 @@
         z-index: -1;
         img{
             max-width: 100%;
+            @media (min-width:1920px) {
+                width: 1920px;
+                object-fit: contain;
+            }
         }
     }
 }
@@ -231,9 +238,9 @@
         content: "";
         width: 100%;
         height: 100%;
-        background-color: #ddf6f7;
+        // background-color: #ddf6f7;
         // background: -webkit-gradient(linear, left top, left bottom, from(#C4F0F1), to(rgba(196, 196, 196, 0)));
-        // background: linear-gradient(180deg, #C4F0F1 0%, rgba(196, 196, 196, 0) 100%);
+        background: linear-gradient(180deg, #C4F0F1 0%, rgba(196, 196, 196, 0) 100%);
         top: 0;
         z-index: -99999;
     }
@@ -282,7 +289,6 @@
             }
         }
     }
-
     @media (max-width:992px) {
         margin-top: 0px;
         padding-top: 0px;
@@ -300,4 +306,93 @@
         }
     }
     
+}
+#location-area{
+    position: relative;
+    .location-bg{
+        @media (max-width:992px) {
+            display: none;
+        }
+        img{
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    .location-mobile-bg{
+        display: none;
+        @media (max-width:992px) {
+            display: block;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .location-content{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 50%;
+        text-align: center;
+        .location-sub-title{
+            @include textFont(
+                $f_size:24px,
+                $line_height:118%,
+                $margin:40px 0 0 0,
+                $transform:uppercase,
+                $f_color:$bg-color
+            );
+            translate:(80px,80px);
+            letter-spacing: 0.57em;
+            line-height: 118%;
+        }
+        .location-title-area{
+            font-size: 240px;
+            font-family: "Allison",sans-serif;
+        }
+        
+        @media (max-width:992px) {
+            width: 100%;
+            left: 0;
+            top: unset;
+            bottom: 0;
+            .location-sub-title{
+                display: none;
+            }
+            .location-title-area{
+                font-size: 80px;
+            }
+            .location-desc{
+                width: 100%;
+                transform: unset;
+            }
+            .location-mobile-bg{
+                display: block;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .location-desc{
+        width: 70%;
+        @include textFont(
+            $f_size:20px,
+            $f_color:$bg-color
+        );
+        transform: translateX(20%);
+    }
+    .location-btn{
+        position: absolute;
+        font-size: 16px !important;
+        top: unset  !important;
+        right: 20% !important;
+        bottom: 30% !important;
+        &::after{
+            content: url("../img/main/right-ok.svg") !important;
+            bottom: 40px !important;
+        }
+        @media (max-width:992px) {
+            display: none;
+        }
+    }
 }
