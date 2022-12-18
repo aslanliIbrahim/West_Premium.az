@@ -131,6 +131,9 @@
       margin-top: 0.563rem;
       font-size: 20px;
       font-weight: 700; }
+  @media (max-width: 1200px) {
+    .map-box {
+      padding: 0 1rem 0.875rem 1rem; } }
 
 .destkop-header {
   padding: 60px 0 30px 0;
@@ -434,9 +437,15 @@
     #location-map .location-map--wrapper .location-map__center iframe {
       width: 100%;
       height: 100%; }
+    @media (max-width: 1200px) {
+      #location-map .location-map--wrapper .location-map__center {
+        display: none; } }
   #location-map .location-map--wrapper .location-map__right {
     display: grid;
     gap: 1rem; }
+  @media (max-width: 1200px) {
+    #location-map .location-map--wrapper {
+      gap: 4.5em; } }
 
 * {
   margin: 0;
