@@ -1,0 +1,53 @@
+.map-box{
+    padding: 0 1.688rem 0.875rem 1.688rem;
+    position: relative;
+    height: 100%;
+    min-height: 10rem;
+    display: grid;
+    align-items: flex-end;
+    &::before{
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        top: 2rem;
+        width: 100%;
+        border: 1px solid #969CA0;
+        border-radius: 1.25rem;
+        z-index: -1;
+    }
+    &__icon{
+        @include flexible(
+            flex,
+            center,
+            center,
+            row
+        );
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            background-color: $white;
+            padding: 1rem 3rem 0 3rem;
+            height: 100%;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: -1;
+        }
+    }
+    &__decs{
+        margin: 1rem;
+        text-align: center;
+        color: #969CA0;
+        line-height: 1.5;
+        font-weight: 400;
+        font-size: 1rem;
+        span{
+            display: block;
+            margin-top: 0.563rem;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+}
