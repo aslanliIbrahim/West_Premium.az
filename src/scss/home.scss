@@ -428,3 +428,157 @@
         }
     }
 }
+.about-us{
+    .about-us__wrapper{
+        display: grid;
+        grid-template-columns: calc(55%) calc(45% - 10px);
+        gap: 10px;
+        align-items: center; 
+        @media (max-width:1200px) {
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+        }
+        .about-us__left{
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                display: inline-block;
+                height: 124px;
+                width: 190px;
+                // background: url(../images/izmir.html);
+                background-size: contain;
+                z-index: 2;
+                background-repeat: no-repeat;
+            }
+            @media (max-width:992px) {
+                margin-bottom: 48px;
+                &::before{
+                    top: unset;
+                    bottom: 0;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, 65%);
+                    transform: translate(-50%, 65%); 
+                }
+            }
+        }
+        .about-us__right{
+            position: relative;
+            padding-right: 160px;
+            padding-top: 25px;
+            &::before {
+                position: absolute;
+                content: "";
+                height: 100%;
+                width: 100vw;
+                top: 50%;
+                right: 0;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                background: #0d1520;
+                border-radius: 0px 190px 190px 0px;
+                z-index: -1;
+            }
+            @media (max-width:992px) {
+                &::before {
+                    background-color: unset;
+                }
+            }
+            .about-us-right-swiper{
+                @include flexible(
+                    flex,
+                    center,
+                    flex-end,
+                    column
+                );
+                text-align: end;
+                gap: 14px;
+                .swiper-slide{
+                    .title{
+                        font-size: 24px;
+                        color: #43aaff;
+                        line-height: 28px;
+                        max-width: 340px;
+                        b{
+                            display: block;
+                            font-size: 57px;
+                            font-weight: 700;
+                            line-height: 67px;
+                        }
+                    }
+                    .text{
+                        color: $white;
+                    }
+                }
+            }
+            .about-us__right__nav{
+                @include flexible(
+                    flex,
+                    center,
+                    center,
+                    row
+                );
+                gap:22px;
+                position: relative;
+                .btn-group{
+                    @include flexible(
+                        flex,
+                        center,
+                        center,
+                        row
+                    );
+                    gap: 22px;
+                    .btn{
+                        background: none;
+                        cursor: pointer;
+                        outline: none;
+                    }
+                    .btn--next{
+                        margin-top:75%;
+                    }
+                    @media (max-width:1200px) {
+                        margin-right: unset;
+                    }
+                }
+                .about-us-fraction{
+                    position: absolute;
+                    right: -50px;
+                    top: 50%;
+                    left: unset;
+                    font-size: 28px;
+                    color: #43aaff;
+                    width: auto;
+                    .swiper-pagination-current{
+                        font-size: 85px;
+                        color: #43aaff;
+                        &::before{
+                            content: "0";
+                        }
+                    }
+                    .swiper-pagination-total{
+                        font-size: 36px;
+                        line-height: 54px;
+                        color: #43aaff; 
+                        &::before{
+                            content: "0";
+                        }
+                    }
+                }
+                @media (max-width:992px) {
+                    @include flexible(
+                        $direction:column
+                    );
+                    gap: 28px;
+                    .about-us-fraction{
+                        right: 5%;
+                    }
+                }
+            }
+        }
+
+    }
+}
