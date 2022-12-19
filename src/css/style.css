@@ -243,9 +243,8 @@
 
 .sidebar {
   position: fixed;
-  left: -100%;
+  left: 0;
   width: 50%;
-  height: 100vh;
   z-index: 99999;
   transition: all .3s ease-in-out; }
   .sidebar .modal-dialog {
@@ -255,8 +254,6 @@
     .sidebar .modal-dialog .modal-content {
       border-top-right-radius: 70px;
       padding: 90px 120px;
-      min-height: 100vh;
-      height: 100%;
       background-size: cover; }
       .sidebar .modal-dialog .modal-content::before {
         position: absolute;
@@ -324,6 +321,35 @@
               height: 15px;
               width: 2px;
               background: #43AAFF; }
+        .sidebar .modal-dialog .modal-content .modal-body .bottom-info {
+          display: flex;
+          align-items: center;
+          margin-top: 30px; }
+          .sidebar .modal-dialog .modal-content .modal-body .bottom-info a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 15px 30px;
+            margin-right: 30px;
+            color: white;
+            border: 1px solid white;
+            border-radius: 32px 25px 0 25px;
+            transition: all .3s ease-in-out; }
+            .sidebar .modal-dialog .modal-content .modal-body .bottom-info a:hover {
+              opacity: 0.7; }
+        .sidebar .modal-dialog .modal-content .modal-body .social-media {
+          display: flex;
+          align-items: center;
+          list-style: none;
+          margin-top: 60px; }
+          .sidebar .modal-dialog .modal-content .modal-body .social-media li {
+            margin-right: 25px; }
+            .sidebar .modal-dialog .modal-content .modal-body .social-media li a {
+              transition: all .3s ease-in-out;
+              color: white; }
+              .sidebar .modal-dialog .modal-content .modal-body .social-media li a:hover {
+                opacity: 0.7; }
+              .sidebar .modal-dialog .modal-content .modal-body .social-media li a i {
+                font-size: 27px; }
 
 .sidebar-active {
   left: 0 !important; }
