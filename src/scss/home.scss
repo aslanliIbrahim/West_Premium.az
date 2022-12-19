@@ -722,9 +722,15 @@
         }
     }
     .all-btn{
-        left: 50%  !important;
+        left: 45%  !important;
         bottom: 80px !important;
+        top: unset !important;
         z-index: 9;
+        background-color: $bg-color !important;
+        &:hover{
+            background-color: unset !important;
+            opacity: 0.8 !important;
+        }
     }
     @media (max-width:992px) {
         padding: 50px 15px 150px 15px;

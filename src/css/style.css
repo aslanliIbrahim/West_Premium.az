@@ -658,9 +658,14 @@
       #picture-gallery .gallery-button-next {
         display: none; } }
   #picture-gallery .all-btn {
-    left: 50%  !important;
+    left: 45%  !important;
     bottom: 80px !important;
-    z-index: 9; }
+    top: unset !important;
+    z-index: 9;
+    background-color: #203E65 !important; }
+    #picture-gallery .all-btn:hover {
+      background-color: unset !important;
+      opacity: 0.8 !important; }
   @media (max-width: 992px) {
     #picture-gallery {
       padding: 50px 15px 150px 15px; }
