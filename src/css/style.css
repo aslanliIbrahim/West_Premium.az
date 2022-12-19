@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .nav-btn {
   text-decoration: none;
   transition: 0.3s all ease-in-out;
@@ -386,7 +387,7 @@
       line-height: 118%; }
     #location-area .location-content .location-title-area {
       font-size: 240px;
-      font-family: "Allison",sans-serif; }
+      font-family: "Allison" , sans-serif; }
     @media (max-width: 992px) {
       #location-area .location-content {
         width: 100%;
@@ -567,6 +568,108 @@
             gap: 28px; }
             .about-us .about-us__wrapper .about-us__right .about-us__right__nav .about-us-fraction {
               right: 5%; } }
+
+#picture-gallery {
+  padding: 200px 0px;
+  position: relative;
+  overflow: hidden; }
+  #picture-gallery .gallery-slider {
+    position: relative;
+    padding: 30px 0px; }
+    #picture-gallery .gallery-slider .swiper-slide .gallery-box {
+      width: 100%;
+      transition: all 3s ease; }
+      #picture-gallery .gallery-slider .swiper-slide .gallery-box img {
+        width: 100%;
+        transition: all 1s ease; }
+    #picture-gallery .gallery-slider .swiper-slide-active .gallery-box img {
+      border-radius: 0 30px 30px 0px; }
+    #picture-gallery .gallery-slider .swiper-slide-duplicate-prev .gallery-box img {
+      border-radius: 0 30px 30px 0px; }
+    #picture-gallery .gallery-slider .swiper-slide-next .gallery-box {
+      transform: scale(1.1); }
+      #picture-gallery .gallery-slider .swiper-slide-next .gallery-box img {
+        border-radius: 30px; }
+    #picture-gallery .gallery-slider::before {
+      position: absolute;
+      content: "Hayatı Keşfet";
+      z-index: 3;
+      font-size: 234px;
+      line-height: 118%;
+      font-family: 'Allison' ,sans-serif;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      height: 100%;
+      color: white;
+      pointer-events: none;
+      transform: translateY(-30px); }
+    @media (max-width: 992px) {
+      #picture-gallery .gallery-slider::before {
+        font-size: 62px; }
+      #picture-gallery .gallery-slider .swiper-slide img {
+        border-radius: 30px; }
+      #picture-gallery .gallery-slider .swiper-slide-next .gallery-box {
+        transform: scale(1); }
+      #picture-gallery .gallery-slider .swiper-slide-active .gallery-box img {
+        border-radius: 30px; }
+      #picture-gallery .gallery-slider .swiper-slide-duplicate-prev .gallery-box img {
+        border-radius: 30px; } }
+  #picture-gallery .gallery-button-prev {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #203E65;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 50%;
+    top: 50%;
+    z-index: 9;
+    left: 100px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all .3s ease; }
+    #picture-gallery .gallery-button-prev:hover {
+      opacity: 0.8; }
+  #picture-gallery .gallery-button-next {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #203E65;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 50%;
+    top: 50%;
+    z-index: 9;
+    right: 100px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all .3s ease; }
+    #picture-gallery .gallery-button-next:hvoer {
+      opacity: 0.8; }
+    @media (max-width: 992px) {
+      #picture-gallery .gallery-button-next {
+        display: none; } }
+  #picture-gallery .all-btn {
+    left: 50%  !important;
+    bottom: 80px !important;
+    z-index: 9; }
+  @media (max-width: 992px) {
+    #picture-gallery {
+      padding: 50px 15px 150px 15px; }
+      #picture-gallery .all-btn {
+        width: 150px  !important;
+        height: 150px !important; } }
+  @media (max-width: 1400px) {
+    #picture-gallery {
+      padding: 100px 0px; } }
 
 footer .footer-up {
   background-color: #f7fafc;

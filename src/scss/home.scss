@@ -347,7 +347,7 @@
         }
         .location-title-area{
             font-size: 240px;
-            font-family: "Allison",sans-serif;
+            font-family: "Allison" , sans-serif;
         }
         
         @media (max-width:992px) {
@@ -581,6 +581,160 @@
             }
         }
 
+    }
+}
+
+#picture-gallery{
+    padding: 200px 0px;
+    position: relative;
+    overflow: hidden;
+    .gallery-slider{
+        position: relative;
+        padding: 30px 0px;
+        .swiper-slide{
+            .gallery-box{
+                width: 100%;
+                transition: all 3s ease;
+                img{
+                    width: 100%;
+                    transition: all 1s ease; 
+                }
+            }
+        }
+        .swiper-slide-active{
+            .gallery-box{
+                img{
+                    border-radius: 0 30px 30px 0px;
+                }
+            }
+        }
+        .swiper-slide-duplicate-prev{
+            .gallery-box{
+                img{
+                    border-radius: 0 30px 30px 0px;
+                }
+            }
+        }
+        .swiper-slide-next{
+            .gallery-box{
+                transform: scale(1.1);
+                img{
+                    border-radius: 30px;
+                }
+            }
+        }
+        
+        &::before{
+            position: absolute;
+            content: "Hayatı Keşfet";
+            z-index: 3;
+            font-size: 234px;
+            line-height: 118%;
+            font-family: 'Allison' ,sans-serif;
+            width: 100%;
+            text-align: center;
+            @include flexible(
+                flex,
+                center,
+                center,
+                row
+            );
+            height: 100%;
+            color: $white;
+            pointer-events: none;
+            transform: translateY(-30px);
+        }
+        @media (max-width:992px) {
+            &::before{
+                font-size: 62px;
+            }
+            .swiper-slide{
+                img{
+                    border-radius: 30px;
+                }
+            }
+            .swiper-slide-next{
+                .gallery-box{
+                    transform: scale(1);
+                }
+            }
+            .swiper-slide-active{
+                .gallery-box{
+                    img{
+                        border-radius: 30px;
+                    }
+                }
+            }
+            .swiper-slide-duplicate-prev{
+                .gallery-box{
+                    img{
+                        border-radius: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .gallery-button-prev{
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        background-color: $bg-color;
+        @include flexible(
+            flex,
+            center,
+            center,
+            row
+        );
+        border-radius: 50%;
+        top: 50%;
+        z-index: 9;
+        left: 100px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        transition: all .3s ease;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+    .gallery-button-next{
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        background-color: $bg-color;
+        @include flexible(
+            flex,
+            center,
+            center,
+            row
+        );
+        border-radius: 50%;
+        top: 50%;
+        z-index: 9;
+        right: 100px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        transition: all .3s ease;
+        &:hvoer{
+            opacity: 0.8;
+        }
+        @media (max-width:992px) {
+            display: none;
+        }
+    }
+    .all-btn{
+        left: 50%  !important;
+        bottom: 80px !important;
+        z-index: 9;
+    }
+    @media (max-width:992px) {
+        padding: 50px 15px 150px 15px;
+        .all-btn{
+            width: 150px  !important;
+            height: 150px !important;
+        }    
+    }
+    @media (max-width:1400px) {
+        padding: 100px 0px; 
     }
 }
 

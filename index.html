@@ -410,6 +410,30 @@
                 </div>
             </div>
         </section>
+        <section id="picture-gallery">
+            <div class="gallery-slider swiper-container">
+                <div class="swiper-wrapper flex-center">
+                    <div class="swiper-slide">
+                        <div class="gallery-box">
+                            <img src="./src/img/main/dikey-gece-rendef.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-box">
+                            <img src="./src/img/main/ust-katlar-dis-renderf.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-box">
+                            <img src="./src/img/main/uzak-proje-renderf.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-button-prev"> <img src="front/svgs/left-ok.svg" alt=""> </div>
+            <div class="gallery-button-next"> <img src="front/svgs/right-ok.svg" alt=""> </div>
+            </div>
+            <a href="galeri.html" class="btn all-btn circle-btn">Galeri</a>
+        </section>
     </main>
     <footer>
         <div class="footer-up">
@@ -638,7 +662,8 @@
                         <li> <a href=""> İletişim İzni </a> </li>
                         <li> <a href=""> Nava Konak </a> </li>
                     </ul>
-                    <a href="https://www.clicktopeak.com/" title="ClicktoPeak" class="ctp" rel="nofollow" target="_blank"> Made By
+                    <a href="https://www.clicktopeak.com/" title="ClicktoPeak" class="ctp" rel="nofollow"
+                        target="_blank"> Made By
                         <figure>
                             <img src="./src/img/main/ctp.svg" alt="">
                         </figure>
@@ -670,6 +695,32 @@
         var aboutUsLeftSwiper = new Swiper(".about-us-left-swiper", {});
         aboutUsLeftSwiper.controller.control = aboutUsRightSwiper;
         aboutUsRightSwiper.controller.control = aboutUsLeftSwiper;
+
+        var gallerySlider = new Swiper('.gallery-slider', {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 60,
+            speed: 2000,
+            delay: 3000,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 1
+                },
+                992: {
+                    slidesPerView: 3
+                }
+            },
+
+            navigation: {
+                nextEl: '.gallery-button-next',
+                prevEl: '.gallery-button-prev',
+            }, pagination: {
+                el: '.slider-pagination',
+            }
+        });
     </script>
 </body>
 
