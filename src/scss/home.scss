@@ -429,6 +429,7 @@
     }
 }
 .about-us{
+    padding: 200px 0;
     .about-us__wrapper{
         display: grid;
         grid-template-columns: calc(55%) calc(45% - 10px);
@@ -580,5 +581,95 @@
             }
         }
 
+    }
+}
+
+footer{
+    .footer-up{
+        background-color: #f7fafc;
+        padding: 60px 0px 50px 0px;
+        .footer__top--wrapper{
+            padding: 15px 0 15px 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            gap: 29px;
+            background-image: url(../img/main/footer-bg.png);
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: contain;
+            .social-side{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                li{
+                    margin-right: 25px;
+                    list-style: none;
+                    &:last-child{
+                        margin: 0;
+                    }
+                    a{
+                        color: $bg-color;
+                        i{
+                            font-size: 27px;
+                        
+                        }
+                    }
+                }
+
+            }
+            .phone-link{
+                color: #8FA1B9;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 118%;
+                letter-spacing: 0.26em;
+                text-decoration: none;
+            }
+        }
+    }
+    .footer-bottom{
+        .footer__bottom--wrapper{
+            @include flexible(
+                flex,
+                center,
+                center,
+                row
+            );
+            padding: 15px 0px;
+            .footer-bottom-menu{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                margin-right: 100px;
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #98A3AC;
+                    }
+                    margin-left: 50px;
+                }
+            }
+            .ctp{
+                display: flex;
+                gap: 13px;
+                color: #98a3ac;
+                font-size: 14px;
+                text-decoration: none;
+            }
+        }
     }
 }
