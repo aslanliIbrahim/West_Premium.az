@@ -241,6 +241,14 @@
     .mobile-header #for-mob-row {
       display: none; } }
 
+.sidebar-bg {
+  background-color: #283037;
+  opacity: 0.5;
+  position: fixed;
+  left: -100%;
+  transition: all 0.3s ease-in-out;
+  z-index: 99999; }
+
 .sidebar {
   position: fixed;
   left: -100%;
@@ -858,6 +866,13 @@ footer .footer-bottom .footer__bottom--wrapper {
     color: #98a3ac;
     font-size: 14px;
     text-decoration: none; }
+
+#about-one {
+  position: relative;
+  margin-top: -157px; }
+  #about-one .about-bg img {
+    width: 100%;
+    object-fit: contain; }
 
 * {
   margin: 0;
