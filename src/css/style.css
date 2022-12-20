@@ -873,6 +873,77 @@ footer .footer-bottom .footer__bottom--wrapper {
   #about-one .about-bg img {
     width: 100%;
     object-fit: contain; }
+  #about-one .about-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%; }
+    #about-one .about-area h1 {
+      font-size: 46px;
+      font-weight: 700;
+      line-height: 118%;
+      color: #203E65;
+      margin: 15px; }
+    #about-one .about-area ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      font-size: 14px;
+      color: #70869A;
+      padding: 0;
+      margin: 0;
+      list-style: none; }
+      #about-one .about-area ul li {
+        margin-right: 40px; }
+        #about-one .about-area ul li a {
+          position: relative;
+          text-decoration: none;
+          color: #70869A;
+          transition: all 0.1s ease-in-out; }
+          #about-one .about-area ul li a::before {
+            position: absolute;
+            content: url(../img/aboutUs/gri-ok.svg);
+            right: -30px; }
+          #about-one .about-area ul li a:hover {
+            color: #203E65; }
+
+#about-two {
+  padding: 30px 0 140px 0; }
+  #about-two .about-two-page-content {
+    line-height: 1.6;
+    word-wrap: break-word; }
+    #about-two .about-two-page-content::before {
+      content: "";
+      clear: both;
+      display: table; }
+    #about-two .about-two-page-content p {
+      color: #283037;
+      line-height: 1.66;
+      margin: 0;
+      margin-bottom: 10px; }
+      #about-two .about-two-page-content p span {
+        font-size: 12.0pt;
+        color: #283037; }
+    #about-two .about-two-page-content::after {
+      content: "";
+      clear: both;
+      display: table; }
+  #about-two .about-two-slogan {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 50px;
+    background-color: #F5F7F9;
+    text-align: center;
+    border-radius: 42px; }
+  #about-two .about-two-picture {
+    position: sticky;
+    top: 20px; }
+    #about-two .about-two-picture img {
+      max-width: 100%; }
 
 * {
   margin: 0;

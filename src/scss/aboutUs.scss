@@ -7,4 +7,101 @@
             object-fit: contain;
         }
     }
+    .about-area{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        h1{
+            @include textFont(
+                $f_size:46px,
+                $text_weight:700,
+                $f_color:$bg-color,
+                $line_height:118%,
+                $margin:15px
+            );
+        }
+        ul{
+            @include flexible(
+                flex,
+                center,
+                center,
+                row
+            );
+            flex-wrap: wrap;
+            @include textFont(
+                $f_size:14px,
+                $f_color:$gray
+            );
+            @include ul(
+                $list-style:none,
+                $pad:0,
+                $mar:0
+            );
+            li{
+                margin-right: 40px;
+                a{
+                    position: relative;
+                    text-decoration: none;
+                    color: $gray;
+                    transition: all 0.1s ease-in-out;
+                    &::before{
+                        position: absolute;
+                        content: url(../img/aboutUs/gri-ok.svg);
+                        right: -30px;
+                    }
+                    &:hover{
+                        color: $bg-color;
+                    }
+                }
+            }
+           
+        }
+    }
+}
+#about-two{
+    padding: 30px 0 140px 0;
+    .about-two-page-content{
+        line-height: 1.6;
+        word-wrap: break-word;
+        &::before{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        p{
+            color: $black;
+            line-height: 1.66;
+            margin: 0;
+            margin-bottom: 10px;
+            span{
+                font-size: 12.0pt;
+                color: $black;
+            }
+        }
+        &::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+    }
+    .about-two-slogan{
+        @include textFont(
+            $text_weight:700,
+            $f_size:24px,
+            $padding:50px,
+            $text_align:center,
+            $background:#F5F7F9
+        );
+        border-radius: 42px
+    }
+    .about-two-picture{
+        position: sticky;
+        top: 20px;
+        img{
+            max-width: 100%;
+        }
+    }
 }
