@@ -1,0 +1,65 @@
+#roomplans-three{
+    padding: 80px 0 200px 0;
+    .content-wrapper{
+        line-height: 1.6;
+        word-wrap: break-word;
+        margin-bottom: 60px;
+        &::before{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        &::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        p{
+            line-height: 1.66;
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: 400;
+            a{
+                text-decoration: none;
+                color: $bg-color;
+            }
+            &:last-child{
+                font-size: 14pt;
+            }
+        }
+    }
+    .tab{
+        overflow: hidden;
+        ul{
+            list-style: none;
+            .room-btn{
+                @include flexible(
+                    flex,
+                    center,
+                    center,
+                    row
+                );
+                @include margin(0 0 20px 0);
+                @include border(1px solid $gray, 23px);
+                color: $gray;
+                width: 160px;
+                height: 160px;
+                max-width: 100%;
+                @include textFont(
+                    $f_size:18px,
+                    $padding:50px 40px,
+                    $line_height:118%,
+                );
+                text-align: center;
+                transition: all .4s ease-in-out;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .room-btn-active{
+                color: $white;
+                background-color: $bg-color;
+            }
+        }
+    }
+}
