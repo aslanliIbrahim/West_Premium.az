@@ -13,20 +13,45 @@ xbtn.addEventListener("click", function () {
   sidebarbtn.classList.remove("sidebar-active");
 });
 
-const roomBtn = document.querySelectorAll(".room-btn");
+// const roomBtn = document.querySelectorAll(".room-btn");
+// const tab = document.querySelectorAll(".tabcontent");
 
-roomBtn.forEach((element) => {
-  element.addEventListener("click", function () {
-    const currentActiveBtn = document.querySelectorAll(
-      ".room-btn.room-btn-active"
-    );
-    for (let i = 0; i < currentActiveBtn.length; i++) {
-        currentActiveBtn[i].classList.remove("room-btn-active")
-        
-    }
-    element.classList.add("room-btn-active");
+// roomBtn.forEach((element) => {
+//   element.addEventListener("click", function () {
+//     const currentActiveBtn = document.querySelectorAll(".room-btn.room-btn-active");
     
+//     const currentActiveTab = document.querySelectorAll(".tabcontent.active-tab");
+    
+//     for (let i = 0; i < currentActiveBtn.length; i++) {
+//         currentActiveBtn[i].classList.remove("room-btn-active");
+//     }
+//     element.classList.add("room-btn-active");
    
-   
-  });
-});
+//   });
+// });
+
+
+const btnAreas = document.querySelector(".btn-areas");
+const roomBtns = document.querySelectorAll(".room-btn");
+const tabContent = document.querySelectorAll(".tabcontent");
+
+if (btnAreas) {
+    btnAreas.addEventListener("click", function(e) {
+        const id = e.target.dataset.id;
+
+        if (id) {
+            roomBtns.forEach((btn) => {
+                btn.classList.remove("room-btn-active");
+            });
+            e.target.classList.add("room-btn-active");
+
+            tabContent.forEach((tabcontent) => {
+                tabcontent.classList.remove("active-tab");
+            });
+            const element = document.getElementById(id);
+            element.classList.add("active-tab");
+        }
+    })
+}
+
+

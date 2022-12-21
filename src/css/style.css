@@ -995,6 +995,65 @@ footer .footer-bottom .footer__bottom--wrapper {
       #roomplans-three .tab ul .room-btn-active {
         color: white;
         background-color: #203E65; }
+  #roomplans-three .tabcontent {
+    display: none;
+    padding: 40px;
+    background-color: #DFE8EF;
+    transition: .3s ease-in-out;
+    border-radius: 48px;
+    position: relative; }
+    #roomplans-three .tabcontent .tab-item .left-side {
+      position: relative;
+      z-index: 5; }
+      #roomplans-three .tabcontent .tab-item .left-side img {
+        max-width: 100%; }
+    #roomplans-three .tabcontent .tab-item .roomplans-detail {
+      color: #203E65;
+      position: relative;
+      z-index: 5; }
+      #roomplans-three .tabcontent .tab-item .roomplans-detail .name {
+        font-size: 19px; }
+      #roomplans-three .tabcontent .tab-item .roomplans-detail .size {
+        font-size: 17px; }
+      #roomplans-three .tabcontent .tab-item .roomplans-detail .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 0 0 10px 0;
+        margin: 0 0 20px 0;
+        border-bottom: solid 2px #203E65; }
+        #roomplans-three .tabcontent .tab-item .roomplans-detail .title .number {
+          font-size: 36px; }
+        #roomplans-three .tabcontent .tab-item .roomplans-detail .title .size {
+          font-size: 18px; }
+      #roomplans-three .tabcontent .tab-item .roomplans-detail ul {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 50px;
+        list-style: none; }
+        #roomplans-three .tabcontent .tab-item .roomplans-detail ul li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: row;
+          margin: 0 0 15px 0; }
+      #roomplans-three .tabcontent .tab-item .roomplans-detail .end-size {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        font-weight: 700; }
+    #roomplans-three .tabcontent .tab-item .place-size {
+      position: absolute;
+      bottom: -47px;
+      right: -39%;
+      color: #203E65;
+      font-weight: 600;
+      font-size: 146px;
+      z-index: 5; }
+  #roomplans-three .active-tab {
+    display: block !important; }
 
 * {
   margin: 0;

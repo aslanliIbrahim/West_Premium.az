@@ -62,4 +62,89 @@
             }
         }
     }
+    .tabcontent{
+        display: none;
+        padding: 40px;
+        background-color: #DFE8EF;
+        transition: .3s ease-in-out;
+        border-radius: 48px;
+        position: relative;
+        .tab-item{
+            // position: relative;
+            .left-side{
+                position: relative;
+                z-index: 5;
+                img{
+                    max-width: 100%;
+                }
+            }
+
+            .roomplans-detail{
+                color: $bg-color;
+                position: relative;
+                z-index: 5;
+                .name{
+                    font-size: 19px;
+                }
+                .size{
+                    font-size: 17px;
+                }
+                .title{
+                    @include flexible(
+                        flex,
+                        space-between,
+                        center,
+                        row
+                    );
+                    @include padding(0 0 10px 0);
+                    @include margin(0 0 20px 0);
+                    border-bottom: solid 2px $bg-color;
+                    .number{
+                        font-size: 36px;
+                    }
+                    .size{
+                        font-size: 18px;
+                    }
+                   
+                }
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    margin-bottom: 50px;
+                    list-style: none;
+                    li{
+                        @include flexible(
+                            flex,
+                            space-between,
+                            center,
+                            row
+                        );
+                        @include margin(0 0 15px 0);
+                    }
+                }
+                .end-size{
+                    @include flexible(
+                        flex,
+                        space-between,
+                        center,
+                        row
+                    );
+                    font-weight: 700;
+
+                }
+            }
+            .place-size{
+                position: absolute;
+                bottom: -47px;
+                right: -39%;
+                color: $bg-color;
+                font-weight: 600;
+                font-size: 146px;
+                z-index: 5;
+            }
+        }
+    }
+    .active-tab{
+        display: block !important;
+    }
 }
