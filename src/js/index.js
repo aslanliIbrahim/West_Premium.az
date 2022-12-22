@@ -37,7 +37,7 @@ const tabContent = document.querySelectorAll(".tabcontent");
 
 if (btnAreas) {
     btnAreas.addEventListener("click", function(e) {
-        const id = e.target.dataset.id;
+        const id = e. dataset.id;
 
         if (id) {
             roomBtns.forEach((btn) => {

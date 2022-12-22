@@ -1055,6 +1055,83 @@ footer .footer-bottom .footer__bottom--wrapper {
   #roomplans-three .active-tab {
     display: block !important; }
 
+#premium-one .premium-picture {
+  transform: translateX(-100px); }
+  #premium-one .premium-picture img {
+    max-width: 100%;
+    width: 100%; }
+
+#premium-one .premium-content {
+  padding-top: 40px; }
+  #premium-one .premium-content .premium-title {
+    color: #283037;
+    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 20px; }
+  #premium-one .premium-content .premium-desc {
+    word-wrap: break-word;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #283037; }
+    #premium-one .premium-content .premium-desc::before {
+      content: "";
+      clear: both;
+      display: table; }
+    #premium-one .premium-content .premium-desc::after {
+      content: "";
+      clear: both;
+      display: table; }
+    #premium-one .premium-content .premium-desc p {
+      margin: 0;
+      line-height: 1.66;
+      margin-bottom: 10px; }
+
+#premium-two .premium-two-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #283037;
+  margin: 0 0 70px 0;
+  text-align: center; }
+
+#premium-two .project-box {
+  width: 90%;
+  background: #43AAFF;
+  border-radius: 19px;
+  margin: 0 0 30px 0;
+  padding: 30px 7px;
+  height: calc(100% - 30px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; }
+  #premium-two .project-box .picture-area {
+    transform: translateX(-25px);
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    border-radius: 16px; }
+    #premium-two .project-box .picture-area:hover {
+      transform: translateX(0); }
+    #premium-two .project-box .picture-area img {
+      max-width: 100%; }
+    @media (max-width: 992px) {
+      #premium-two .project-box .picture-area {
+        transform: translateX(0); } }
+  #premium-two .project-box .project-title {
+    width: 70%;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin: 20px 0 12px 0;
+    padding: 0px 20px;
+    text-align: center; }
+  #premium-two .project-box .project-city {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.58);
+    padding: 0 20px;
+    text-align: center; }
+
 * {
   margin: 0;
   padding: 0;
