@@ -1132,6 +1132,23 @@ footer .footer-bottom .footer__bottom--wrapper {
     padding: 0 20px;
     text-align: center; }
 
+#contact {
+  padding: 80px 0px; }
+  #contact .contact-title-area p {
+    line-height: 1.66;
+    margin: 0 0 10px 0;
+    text-align: center; }
+    #contact .contact-title-area p span {
+      font-size: 18pt; }
+  #contact .contact-title-area::before {
+    content: "";
+    clear: both;
+    display: table; }
+  #contact .contact-title-area::after {
+    content: "";
+    clear: both;
+    display: table; }
+
 * {
   margin: 0;
   padding: 0;

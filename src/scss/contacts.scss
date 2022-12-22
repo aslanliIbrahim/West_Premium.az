@@ -1,0 +1,27 @@
+#contact{
+    padding: 80px 0px;
+    .contact-title-area{
+        p{
+            @include textFont(
+                $line_height:1.66,
+                $margin:0 0 10px 0,
+                $text_align:center
+            );
+            span{
+                @include textFont(
+                    $f_size:18pt
+                );
+            }
+        }
+        &::before{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        &::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+    }
+}
