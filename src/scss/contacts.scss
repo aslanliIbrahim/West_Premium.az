@@ -24,4 +24,130 @@
             display: table;
         }
     }
+    .contact-box-area{
+        margin-top: 80px;
+        display: flex;
+        position: relative;
+        .left-infos{
+            width: 50%;
+            @include padding(120px 80px 100px 80px);
+            @include border($border-radius:0 0 0 107px);
+            color: #D7DFE7;
+            @include flexible(
+                $flex:flex,
+                $jus:space-between,
+                $direction:column
+            );
+            background-color: #1B2F49;
+            position: relative;
+            .top{
+                @include margin(0 0 65px 0);
+                .contact-title{
+                    @include textFont(
+                        $f_size:39px,
+                        $text_weight:600,
+                        $margin:0 0 15px 0
+                    );
+                }
+                ul{
+                    @include ul(
+                        $pad:0,
+                        $mar:0,
+                        $list-style:none,
+                    );
+                    @include textFont(
+                        $f_size:18px
+                    );
+                    li{
+                        @include margin(0 0 20px 0);
+                        a{
+                            text-decoration: none;
+                            transition: all .3s ease-in-out;
+                            color: inherit;
+                            &:hover{
+                                color: $bg-color;
+                            }
+                        }
+                        &:nth-child(2){
+                            @include textFont(
+                                $text_weight:600,
+                                $f_size:28px
+                            );
+                        }
+                    }
+                }
+            }
+            .bottom{
+                @include flexible(
+                    $flex:flex,
+                    $aling:center
+                );
+                .contact-social-media{
+                    @include ul(
+                        $pad:0,
+                        $mar: 0 40px 0 0,
+                        $list-style:none
+                    );
+                    @include textFont(
+                        $f_size:18px
+                    );
+                    @include flexible(
+                        $flex:flex,
+                        $aling:center
+                    );
+                    li{
+                        @include margin(0 25px 0 0); 
+                        a{
+                            text-decoration: none;
+                            color: inherit;
+                            i{
+                                font-size: 27px;
+                            }
+                        }
+                    }
+                }
+                .contact-wp{
+                    text-decoration: none;
+                    color: inherit;
+                    display: inline-block;
+                    @include padding(10px 25px);
+                    @include border(
+                        1px solid #5F6A72,
+                        32px 0px 25.5px 25px
+                    );
+                    img{
+                        max-width: 100%;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .maps{
+            width: 50%;
+            border-top-right-radius: 107px;
+            iframe{
+                width: 100%;
+                height: 600px;
+                margin: 0;
+                padding: 0;
+                display: block;
+                border-top-right-radius: 107px
+            }
+        }
+        .map-btn{
+            left: 44% !important;
+            font-size: 18px !important;
+            width: 177px;
+            height: 177px;
+            &:hover{
+                background-color: unset !important;
+                color: $white !important;
+                opacity: 0.9 !important;
+            }
+            &::before{
+                width: 190px !important;
+                height: 190px !important;
+            }
+        }
+    }
 }

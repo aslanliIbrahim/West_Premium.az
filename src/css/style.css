@@ -1148,6 +1148,91 @@ footer .footer-bottom .footer__bottom--wrapper {
     content: "";
     clear: both;
     display: table; }
+  #contact .contact-box-area {
+    margin-top: 80px;
+    display: flex;
+    position: relative; }
+    #contact .contact-box-area .left-infos {
+      width: 50%;
+      padding: 120px 80px 100px 80px;
+      border-radius: 0 0 0 107px;
+      color: #D7DFE7;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      background-color: #1B2F49;
+      position: relative; }
+      #contact .contact-box-area .left-infos .top {
+        margin: 0 0 65px 0; }
+        #contact .contact-box-area .left-infos .top .contact-title {
+          font-size: 39px;
+          font-weight: 600;
+          margin: 0 0 15px 0; }
+        #contact .contact-box-area .left-infos .top ul {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          font-size: 18px; }
+          #contact .contact-box-area .left-infos .top ul li {
+            margin: 0 0 20px 0; }
+            #contact .contact-box-area .left-infos .top ul li a {
+              text-decoration: none;
+              transition: all .3s ease-in-out;
+              color: inherit; }
+              #contact .contact-box-area .left-infos .top ul li a:hover {
+                color: #203E65; }
+            #contact .contact-box-area .left-infos .top ul li:nth-child(2) {
+              font-size: 28px;
+              font-weight: 600; }
+      #contact .contact-box-area .left-infos .bottom {
+        display: flex;
+        align-items: center; }
+        #contact .contact-box-area .left-infos .bottom .contact-social-media {
+          padding: 0;
+          margin: 0 40px 0 0;
+          list-style: none;
+          font-size: 18px;
+          display: flex;
+          align-items: center; }
+          #contact .contact-box-area .left-infos .bottom .contact-social-media li {
+            margin: 0 25px 0 0; }
+            #contact .contact-box-area .left-infos .bottom .contact-social-media li a {
+              text-decoration: none;
+              color: inherit; }
+              #contact .contact-box-area .left-infos .bottom .contact-social-media li a i {
+                font-size: 27px; }
+        #contact .contact-box-area .left-infos .bottom .contact-wp {
+          text-decoration: none;
+          color: inherit;
+          display: inline-block;
+          padding: 10px 25px;
+          border: 1px solid #5F6A72;
+          border-radius: 32px 0px 25.5px 25px; }
+          #contact .contact-box-area .left-infos .bottom .contact-wp img {
+            max-width: 100%;
+            margin-right: 10px; }
+    #contact .contact-box-area .maps {
+      width: 50%;
+      border-top-right-radius: 107px; }
+      #contact .contact-box-area .maps iframe {
+        width: 100%;
+        height: 600px;
+        margin: 0;
+        padding: 0;
+        display: block;
+        border-top-right-radius: 107px; }
+    #contact .contact-box-area .map-btn {
+      left: 44% !important;
+      font-size: 18px !important;
+      width: 177px;
+      height: 177px; }
+      #contact .contact-box-area .map-btn:hover {
+        background-color: unset !important;
+        color: white !important;
+        opacity: 0.9 !important; }
+      #contact .contact-box-area .map-btn::before {
+        width: 190px !important;
+        height: 190px !important; }
 
 * {
   margin: 0;
