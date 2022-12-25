@@ -1,3 +1,32 @@
+const mob_Nav_Right = document.querySelector(".mob-nav-right");
+const sidebar_Mobile = document.querySelector(".sidebar-mobile");
+const close_Btn = document.querySelector(".close-btn");
+
+if (mob_Nav_Right) {
+  mob_Nav_Right.addEventListener("click", function() {
+    sidebar_Mobile.classList.add("sidebar-mobile-active");
+  });
+}
+
+if (close_Btn) {
+  close_Btn.addEventListener("click", function() {
+    if (sidebar_Mobile.classList.contains("sidebar-mobile-active")) {
+      sidebar_Mobile.classList.remove("sidebar-mobile-active");
+    }
+  })
+}
+
+
+
+
+
+
+
+
+
+
+
+
 const menubtn = document.querySelector(".menu-btn");
 const sidebarbtn = document.querySelector(".sidebar");
 const xbtn = document.querySelector(".cart");
@@ -12,24 +41,6 @@ menubtn.addEventListener("click", function () {
 xbtn.addEventListener("click", function () {
   sidebarbtn.classList.remove("sidebar-active");
 });
-
-// const roomBtn = document.querySelectorAll(".room-btn");
-// const tab = document.querySelectorAll(".tabcontent");
-
-// roomBtn.forEach((element) => {
-//   element.addEventListener("click", function () {
-//     const currentActiveBtn = document.querySelectorAll(".room-btn.room-btn-active");
-    
-//     const currentActiveTab = document.querySelectorAll(".tabcontent.active-tab");
-    
-//     for (let i = 0; i < currentActiveBtn.length; i++) {
-//         currentActiveBtn[i].classList.remove("room-btn-active");
-//     }
-//     element.classList.add("room-btn-active");
-   
-//   });
-// });
-
 
 const btnAreas = document.querySelector(".btn-areas");
 const roomBtns = document.querySelectorAll(".room-btn");
