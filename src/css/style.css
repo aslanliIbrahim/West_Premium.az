@@ -1300,6 +1300,24 @@ footer .footer-bottom .footer__bottom--wrapper {
       #contact-form-area .offset-lg-1 {
         margin-left: 8.3%; } }
 
+#gallery-side .content-wrapper {
+  line-height: 1.6;
+  word-wrap: break-word; }
+  #gallery-side .content-wrapper::after {
+    content: "";
+    clear: both;
+    display: table; }
+  #gallery-side .content-wrapper::before {
+    content: "";
+    clear: both;
+    display: table; }
+  #gallery-side .content-wrapper p {
+    line-height: 1.66;
+    margin-bottom: 10px; }
+    #gallery-side .content-wrapper p span {
+      font-size: 21pt;
+      color: #36393D; }
+
 * {
   margin: 0;
   padding: 0;

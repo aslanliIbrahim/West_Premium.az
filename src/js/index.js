@@ -37,16 +37,19 @@ const tabContent = document.querySelectorAll(".tabcontent");
 
 if (btnAreas) {
     btnAreas.addEventListener("click", function(e) {
-        const id = e.dataset.id;
+        const id = e.target.dataset.id;
 
         if (id) {
             roomBtns.forEach((btn) => {
                 btn.classList.remove("room-btn-active");
+                console.log("hello");
             });
             e.target.classList.add("room-btn-active");
+            console.log("added");
 
             tabContent.forEach((tabcontent) => {
                 tabcontent.classList.remove("active-tab");
+                console.log("removed");
             });
             const element = document.getElementById(id);
             element.classList.add("active-tab");

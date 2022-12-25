@@ -1,0 +1,24 @@
+#gallery-side{
+    .content-wrapper{
+        line-height: 1.6;
+        word-wrap: break-word;
+        &::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        &::before{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        p{
+            line-height: 1.66;
+            margin-bottom: 10px;
+            span{
+                font-size: 21pt;
+                color: $gray2;
+            }
+        }
+    }
+}
