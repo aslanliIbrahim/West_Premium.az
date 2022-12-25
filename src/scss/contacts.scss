@@ -151,3 +151,84 @@
         }
     }
 }
+#contact-form-area{
+    background-image: url(../img/aboutUs/contact-bg.png);
+    padding: 500px 0px 140px 0px;
+    margin-top: -400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .contact-form-content{
+        color: $white;
+        .title{
+            position: relative;
+            @include textFont(
+                $text_weight:700,
+                $f_size:32px,
+                $line_height:54px,
+                $padding:0 0 5px 0,
+                $margin: 0 0 10px 0
+            );
+            &::before{
+                position: absolute;
+                content: "";
+                width: 70px;
+                height: 3px;
+                background-color: #43AAFF;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        .description{
+            color: #7D8E9D;
+        }
+    }
+    .offset-lg-1{
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px; 
+        .form-item{
+            border: none;
+            border-bottom: solid 1px $white;
+            background: none;
+            padding: 10px 0px;
+            color: $white;
+            width: 100%;
+            margin-bottom: 50px;
+            font-size: 15px;
+            outline: none;
+            &::placeholder{
+                color: $white;
+            }
+        }
+        .send-btn{
+            position: relative;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            outline: none;
+            @include _button(
+                $padding:20px 50px,
+                $border_radius:31px,
+                $font_size:18px,
+                $color:$white,
+                $width:170px,
+                $margin:30px 0 0 0,
+                $bg_color:#43B5E4
+            );
+            &:hover{
+                background-color: $bg-color;
+            }
+            img{
+                position: absolute;
+                right: -15px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        @media (min-width:992px) {
+            margin-left: 8.3%;
+        }
+    }
+   
+}
