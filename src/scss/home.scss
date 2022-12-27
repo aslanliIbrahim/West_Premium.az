@@ -469,12 +469,30 @@
         position: absolute;
         top: -190px;
         z-index: -1;
+    background: linear-gradient(360deg, rgba(255, 241, 225, 0.45) 7.75%, rgba(196, 196, 196, 0) 100%);
+
+        // &::before{
+        //     position: absolute;
+        //     content: "";
+        //     width: 100%;
+        //     height: 100%;
+        //     top: 0;
+        //     left: 0;
+        //     background-color: black;
+        //     opacity: 0.4;
+        //     z-index: 3;
+        // }
         img{
             max-width: 100%;
+            width: 100vw;
+            object-fit: contain;
+            position: relative;
+            display: block;
             @media (min-width:1920px) {
                 width: 1920px;
                 object-fit: contain;
             }
+            
         }
     }
     @media (max-width:992px) {
@@ -495,10 +513,68 @@
         }
     }
 }
+#index-two{
+    padding-top: 81px;
+    background: linear-gradient(180deg, rgba(255, 241, 225, 0.45) 7.75%, rgba(196, 196, 196, 0) 100%);
+    margin-top: -152px;
+    .welcome{
+        @include textFont(
+            $text_weight:400,
+            $f_size:14px,
+            $line_height:20px,
+        );
+    }
+    .index-write-side{
+        h3{
+            font-family: "Island Moments", sans-serif;
+            @include textFont(
+                $text_weight:400,
+                $f_size:72px,
+                $line_height:72px,
+                $f_color:$gold-color
+            );
+        }
+        h2{
+            @include textFont(
+                $text_weight:300,
+                $f_size:66.72px,
+                $line_height:66.72px,
+                $f_color:$black,
+                $margin: 0 0 38px 0
+            );
+        }
+        p{
+            @include textFont(
+                $text_weight:200,
+                $f_size:24px,
+                $line_height:32.4px
+            );
+            
+        }
+        .p-two{
+            @include textFont(
+                $text_weight:400,
+                $f_size:16px,
+                $line_height:24px,
+                $margin:24px 0 0 0
+            );
+        }
+    }
+    .index-two-img_side{
+        @include flexible(
+            $flex:flex,
+            $jus:center
+        );
+        img{
+            max-width: 100%;
+            object-fit: contain;
+        }
+    }
+}
 #life-component{
     position: relative;
     padding-top: 180px;
-    margin-top: -380px;
+    // margin-top: -380px;
     z-index: 99;
     &::before{
         position: absolute;
@@ -507,7 +583,7 @@
         height: 100%;
         // background-color: #ddf6f7;
         // background: -webkit-gradient(linear, left top, left bottom, from(#C4F0F1), to(rgba(196, 196, 196, 0)));
-        background: linear-gradient(180deg, #C4F0F1 0%, rgba(196, 196, 196, 0) 100%);
+        background: linear-gradient(360deg, rgba(255, 241, 225, 0.45) 7.75%, rgba(196, 196, 196, 0) 100%);
         top: 0;
         z-index: -99999;
     }
