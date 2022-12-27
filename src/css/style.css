@@ -146,9 +146,11 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
     z-index: -1;
     top: 0; }
   .destkop-header .header-left {
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: row; }
@@ -170,8 +172,12 @@
     display: block;
     text-align: center; }
     .destkop-header .logo-area img {
-      max-width: 100%; }
+      max-width: 100%;
+      width: 190px;
+      height: 130px;
+      object-fit: contain; }
   .destkop-header .header-right {
+    height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -258,7 +264,6 @@
   z-index: 99999;
   transition: all .3s ease-in-out; }
   .sidebar .modal-dialog {
-    max-width: 800px;
     height: auto;
     border-top-right-radius: 70px; }
     .sidebar .modal-dialog .modal-content {
@@ -544,6 +549,9 @@
     #index-two .index-two-img_side img {
       max-width: 100%;
       object-fit: contain; }
+    @media (max-width: 992px) {
+      #index-two .index-two-img_side .for-none {
+        display: none; } }
 
 #life-component {
   position: relative;
@@ -690,6 +698,9 @@
   #location-map .location-map--wrapper .location-map__right {
     display: grid;
     gap: 1rem; }
+  @media (max-width: 992px) {
+    #location-map .location-map--wrapper {
+      gap: 2em !important; } }
   @media (max-width: 1200px) {
     #location-map .location-map--wrapper {
       gap: 4.5em; } }
@@ -742,7 +753,7 @@
         right: 0;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
-        background: #0d1520;
+        background: #232323;
         border-radius: 0px 190px 190px 0px;
         z-index: -1; }
       @media (max-width: 992px) {
@@ -757,7 +768,7 @@
         gap: 14px; }
         .about-us .about-us__wrapper .about-us__right .about-us-right-swiper .swiper-slide .title {
           font-size: 24px;
-          color: #43aaff;
+          color: #E2B98D;
           line-height: 28px;
           max-width: 340px; }
           .about-us .about-us__wrapper .about-us__right .about-us-right-swiper .swiper-slide .title b {
@@ -766,7 +777,7 @@
             font-weight: 700;
             line-height: 67px; }
         .about-us .about-us__wrapper .about-us__right .about-us-right-swiper .swiper-slide .text {
-          color: white; }
+          color: #E2B98D; }
       .about-us .about-us__wrapper .about-us__right .about-us__right__nav {
         display: flex;
         justify-content: center;
@@ -784,6 +795,8 @@
             background: none;
             cursor: pointer;
             outline: none; }
+            .about-us .about-us__wrapper .about-us__right .about-us__right__nav .btn-group .btn figure svg path {
+              fill: #E2B98D; }
           .about-us .about-us__wrapper .about-us__right .about-us__right__nav .btn-group .btn--next {
             margin-top: 75%; }
           @media (max-width: 1200px) {
@@ -795,17 +808,17 @@
           top: 50%;
           left: unset;
           font-size: 28px;
-          color: #43aaff;
+          color: #E2B98D;
           width: auto; }
           .about-us .about-us__wrapper .about-us__right .about-us__right__nav .about-us-fraction .swiper-pagination-current {
             font-size: 85px;
-            color: #43aaff; }
+            color: #E2B98D; }
             .about-us .about-us__wrapper .about-us__right .about-us__right__nav .about-us-fraction .swiper-pagination-current::before {
               content: "0"; }
           .about-us .about-us__wrapper .about-us__right .about-us__right__nav .about-us-fraction .swiper-pagination-total {
             font-size: 36px;
             line-height: 54px;
-            color: #43aaff; }
+            color: #E2B98D; }
             .about-us .about-us__wrapper .about-us__right .about-us__right__nav .about-us-fraction .swiper-pagination-total::before {
               content: "0"; }
         @media (max-width: 992px) {
@@ -871,7 +884,8 @@
     position: absolute;
     width: 80px;
     height: 80px;
-    background-color: #203E65;
+    background: rgba(35, 35, 35, 0.65);
+    color: #E2B98D;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -896,7 +910,7 @@
     position: absolute;
     width: 80px;
     height: 80px;
-    background-color: #203E65;
+    background: rgba(35, 35, 35, 0.65);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -922,7 +936,7 @@
     bottom: 80px !important;
     top: unset !important;
     z-index: 9;
-    background-color: #203E65 !important; }
+    background-color: #E2B98D !important; }
     #picture-gallery .all-btn:hover {
       background-color: unset !important;
       opacity: 0.8 !important; }
