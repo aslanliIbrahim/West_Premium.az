@@ -1379,6 +1379,19 @@ footer .footer-bottom .footer__bottom--wrapper {
           #contact .contact-box-area .left-infos .bottom .contact-wp img {
             max-width: 100%;
             margin-right: 10px; }
+      @media (max-width: 920px) {
+        #contact .contact-box-area .left-infos {
+          width: 100%;
+          padding: 40px 25px;
+          border-radius: 0px; }
+          #contact .contact-box-area .left-infos .top {
+            margin: 0; }
+          #contact .contact-box-area .left-infos .bottom {
+            flex-direction: column !important; }
+            #contact .contact-box-area .left-infos .bottom .contact-social-media {
+              margin-bottom: 15px; }
+            #contact .contact-box-area .left-infos .bottom .contact-wp {
+              width: 67%; } }
     #contact .contact-box-area .maps {
       width: 50%;
       border-top-right-radius: 107px; }
@@ -1389,6 +1402,14 @@ footer .footer-bottom .footer__bottom--wrapper {
         padding: 0;
         display: block;
         border-top-right-radius: 107px; }
+      @media (max-width: 920px) {
+        #contact .contact-box-area .maps {
+          width: 100%;
+          border-radius: 0px; }
+          #contact .contact-box-area .maps iframe {
+            border: 0;
+            border-radius: 0px;
+            height: 400px; } }
     #contact .contact-box-area .map-btn {
       left: 44% !important;
       font-size: 18px !important;
@@ -1401,6 +1422,12 @@ footer .footer-bottom .footer__bottom--wrapper {
       #contact .contact-box-area .map-btn::before {
         width: 190px !important;
         height: 190px !important; }
+      @media (max-width: 920px) {
+        #contact .contact-box-area .map-btn {
+          display: none; } }
+    @media (max-width: 920px) {
+      #contact .contact-box-area {
+        flex-direction: column; } }
 
 #contact-form-area {
   background-image: url(../img/aboutUs/contact-bg.png);
