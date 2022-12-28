@@ -34,7 +34,7 @@
             list-style: none;
             .room-btn{
                 @include flexible(
-                    flex,
+                    inline-flex,
                     center,
                     center,
                     row
@@ -55,10 +55,22 @@
                 &:hover{
                     cursor: pointer;
                 }
+                @media (max-width:992px) {
+                    float: left;
+                    width: calc(50% - 21px);
+                    height: 45px;
+                    padding: 10px;
+                    font-size: 16px;
+                    margin-right: 20px;
+                    margin-bottom: 20px;
+                }
             }
             .room-btn-active{
                 color: $white;
                 background-color: $bg-color;
+            }
+            @media (max-width:992px) {
+                padding: 0;
             }
         }
     }
@@ -141,6 +153,9 @@
                 font-weight: 600;
                 font-size: 146px;
                 z-index: 5;
+                @media (max-width:992px) {
+                    display: none;
+                }
             }
         }
     }
