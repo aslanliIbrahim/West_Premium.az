@@ -8,17 +8,16 @@
   flex-direction: row;
   padding: 8px 20px;
   border-radius: 22px;
-  color: #43B5E4;
-  background-color: #203E65;
+  color: white;
+  background-color: #232323;
   height: 36px;
   font-size: 18px; }
   .nav-btn:hover {
-    color: #203E65;
-    background-color: #43B5E4; }
+    color: #232323;
+    background-color: #E2B98D; }
 
 .circle-btn {
   position: absolute;
-  background: rgba(31, 43, 71, 0.44);
   backdrop-filter: blur(11px);
   line-height: 118%;
   letter-spacing: 0.42em;
@@ -37,13 +36,13 @@
   font-weight: 500;
   color: white; }
   .circle-btn:hover {
-    background: rgba(0, 196, 208, 0.44); }
+    color: unset; }
   .circle-btn::before {
     position: absolute;
     content: '';
     width: 180px;
     height: 180px;
-    border: 1px solid white;
+    border: 1px solid #E2B98D;
     border-radius: 50%; }
   .circle-btn::after {
     content: url("../img/main/arrow-down.svg");
@@ -140,13 +139,13 @@
   padding: 30px 0 17px 0;
   position: relative;
   z-index: 102;
-  background-color: white; }
+  border-color: unset; }
   .destkop-header::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, white 48%, rgba(255, 255, 255, 0) 100%);
     z-index: -1;
     top: 0; }
   .destkop-header .header-left {
@@ -158,13 +157,14 @@
       display: inline-flex;
       align-items: center;
       padding: 8px 14px;
-      border: 1px solid #203E65;
+      border: 1px solid #E2B98D;
       border-radius: 22px;
-      color: #203E65;
+      color: white;
       margin: 0 30px 0 0;
       height: 36px;
       cursor: pointer;
-      text-decoration: none; }
+      text-decoration: none;
+      background-color: #E2B98D !important; }
       .destkop-header .header-left .menu-btn img {
         max-width: 100%;
         margin-right: 10px; }
@@ -194,7 +194,7 @@
         .destkop-header .header-right ul li a {
           text-decoration: none; }
           .destkop-header .header-right ul li a i {
-            color: #203E65;
+            color: #232323;
             width: 27px;
             height: 27px;
             font-size: 27px; }
@@ -206,12 +206,12 @@
       width: 41px;
       margin: 0 0 0 30px;
       border-radius: 50%;
-      background-color: #203E65;
+      background-color: #232323;
       height: 41px; }
     .destkop-header .header-right .phone-care {
       font-size: 18px;
       font-weight: 700;
-      color: #203E65;
+      color: #232323;
       margin: 10px 0 0 30px;
       letter-spacing: 0.26em;
       text-decoration: none; }
@@ -250,7 +250,7 @@
         display: none; } }
 
 .sidebar-bg {
-  background-color: #283037;
+  background-color: #232323;
   opacity: 0.5;
   position: fixed;
   left: -100%;
@@ -268,7 +268,7 @@
     border-top-right-radius: 70px; }
     .sidebar .modal-dialog .modal-content {
       border-top-right-radius: 70px;
-      padding: 90px 120px;
+      padding: 100px 120px;
       background-size: cover; }
       .sidebar .modal-dialog .modal-content::before {
         position: absolute;
@@ -450,8 +450,7 @@
 #index-one {
   position: relative;
   min-height: 100vh;
-  z-index: 101;
-  margin-top: 10%; }
+  z-index: 101; }
   #index-one .index-one-content {
     position: absolute;
     top: 10%;
@@ -532,7 +531,7 @@
     font-size: 66.72px;
     font-weight: 300;
     line-height: 66.72px;
-    color: #283037;
+    color: #232323;
     margin: 0 0 38px 0; }
   #index-two .index-write-side p {
     font-size: 24px;
@@ -587,15 +586,15 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 1.5;
-        color: #283037;
+        color: #232323;
         margin: 0 0 25px 0;
         text-align: center; }
       #life-component .right-component .life-component-right .life-component-btn {
-        color: #283037; }
+        color: #232323; }
         #life-component .right-component .life-component-right .life-component-btn::before {
           content: url("../img/main/arrow-black.svg"); }
         #life-component .right-component .life-component-right .life-component-btn::after {
-          border: 1px solid #283037 !important; }
+          border: 1px solid #232323 !important; }
   @media (max-width: 992px) {
     #life-component {
       margin-top: 0px;
@@ -953,7 +952,8 @@
       padding: 100px 0px; } }
 
 footer .footer-up {
-  background-color: #f7fafc;
+  background-color: #E2B98D36;
+  background-image: url(../img/main/Footer-bgbg.svg);
   padding: 60px 0px 50px 0px; }
   footer .footer-up .footer__top--wrapper {
     padding: 15px 0 15px 0;
@@ -971,7 +971,6 @@ footer .footer-up {
     -ms-flex-pack: center;
     justify-content: center;
     gap: 29px;
-    background-image: url(../img/main/footer-bg.png);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: contain; }
@@ -1089,13 +1088,13 @@ footer .footer-bottom .footer__bottom--wrapper {
       clear: both;
       display: table; }
     #about-two .about-two-page-content p {
-      color: #283037;
+      color: #232323;
       line-height: 1.66;
       margin: 0;
       margin-bottom: 10px; }
       #about-two .about-two-page-content p span {
         font-size: 12.0pt;
-        color: #283037; }
+        color: #232323; }
     #about-two .about-two-page-content::after {
       content: "";
       clear: both;
@@ -1247,7 +1246,7 @@ footer .footer-bottom .footer__bottom--wrapper {
 #premium-one .premium-content {
   padding-top: 40px; }
   #premium-one .premium-content .premium-title {
-    color: #283037;
+    color: #232323;
     font-weight: 800;
     font-size: 36px;
     margin-bottom: 20px; }
@@ -1256,7 +1255,7 @@ footer .footer-bottom .footer__bottom--wrapper {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.6;
-    color: #283037; }
+    color: #232323; }
     #premium-one .premium-content .premium-desc::before {
       content: "";
       clear: both;
@@ -1273,7 +1272,7 @@ footer .footer-bottom .footer__bottom--wrapper {
 #premium-two .premium-two-title {
   font-size: 36px;
   font-weight: bold;
-  color: #283037;
+  color: #232323;
   margin: 0 0 70px 0;
   text-align: center; }
 

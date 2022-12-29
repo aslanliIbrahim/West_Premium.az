@@ -2,13 +2,14 @@
     padding: 30px 0 17px 0;
     position: relative;
     z-index: 102;
-    background-color: $white;   
+    // background-color: $white; 
+    border-color: unset;  
     &::before{
         content: "";
         position: absolute;
         width: 100%;
         height: 100%;
-        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+        background: linear-gradient(180deg, $white 48%, rgba(255, 255, 255, 0) 100%);
         z-index: -1;
         top: 0;
     }
@@ -25,12 +26,13 @@
                 $aling:center
             );
             @include padding(8px 14px);
-            @include border(1px solid $bg-color, 22px);
-            @include textFont($f_color:$bg-color);
+            @include border(1px solid $gold-color, 22px);
+            @include textFont($f_color:$white);
             @include margin(0 30px 0 0);
             @include _button($height:36px);
             cursor: pointer;
             text-decoration: none;
+            background-color: $gold-color !important;
             img{
                 max-width: 100%;
                 margin-right: 10px;
@@ -72,7 +74,7 @@
                 a{
                     text-decoration: none;
                     i{
-                        color: $bg-color;
+                        color: $black;
                         width: 27px;
                         height: 27px;
                         font-size: 27px;
@@ -90,7 +92,7 @@
             @include _button(
                 $width:41px,
                 $height:41px,
-                $bg_color:$bg-color,
+                $bg_color:$black,
                 $border_radius:50%,
                 $margin:0 0 0 30px
             );
@@ -99,7 +101,7 @@
             @include textFont(
                 $f_size:18px,
                 $text_weight:700,
-                $f_color:$bg_color,
+                $f_color:$black,
                 $margin:10px 0 0 30px
             );
             letter-spacing: 0.26em;
@@ -177,7 +179,7 @@
         border-top-right-radius: 70px;
         .modal-content{
             border-top-right-radius: 70px;
-            padding: 90px 120px;
+            padding: 100px 120px;
             // min-height: 100vh;
             // height: 100%;
             background-size: cover;
@@ -419,7 +421,7 @@
     min-height: 100vh;
     z-index: 101;
     // background-color: #ddf6f7;
-    margin-top: 10%;
+    // margin-top: 10%;
     .index-one-content{
         position: absolute;
         top: 10%;
@@ -1132,7 +1134,9 @@
 }
 footer{
     .footer-up{
-        background-color: #f7fafc;
+        // background-color: #f7fafc;
+        background-color: #E2B98D36;
+        background-image: url(../img/main/Footer-bgbg.svg);
         padding: 60px 0px 50px 0px;
         .footer__top--wrapper{
             padding: 15px 0 15px 0;
@@ -1150,7 +1154,7 @@ footer{
             -ms-flex-pack: center;
             justify-content: center;
             gap: 29px;
-            background-image: url(../img/main/footer-bg.png);
+            // background-image: url(../img/main/Footer-bgbg.svg);
             background-repeat: no-repeat;
             background-position: center bottom;
             background-size: contain;

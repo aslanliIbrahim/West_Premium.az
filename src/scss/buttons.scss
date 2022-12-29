@@ -3,8 +3,8 @@
     transition: 0.3s all ease-in-out;
     &:hover{
         @include _button(
-            $bg_color:$color,
-            $color:$bg-color,
+            $bg_color:$gold-color,
+            $color:$black,
         );
     }
     @include flexible(
@@ -16,15 +16,15 @@
     @include _button(
         $height:36px,
         $font_size:18px,
-        $bg_color:$bg-color,
-        $color:$color,
+        $bg_color:$black,
+        $color:$white,
         $padding:8px 20px,
         $border_radius:22px
     );
 }
 .circle-btn{
     position: absolute;
-    background: rgba(31, 43, 71, 0.44);
+    // background: rgba(31, 43, 71, 0.44);
     backdrop-filter: blur(11px);
     line-height: 118%;
     letter-spacing: 0.42em;
@@ -33,7 +33,8 @@
     text-transform: uppercase;
     text-align: center;
     &:hover{
-        background: rgba(0, 196, 208, 0.44);
+        // background: rgba(0, 196, 208, 0.44);
+        color: unset;
     }
     @include flexible(
         flex,
@@ -56,7 +57,7 @@
         content: '';
         width: 180px;
         height: 180px;
-        @include border(1px solid $white,50%);
+        @include border(1px solid $gold-color,50%);
     }
     &::after{
         content: url("../img/main/arrow-down.svg");
