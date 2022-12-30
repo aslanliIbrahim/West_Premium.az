@@ -1146,17 +1146,17 @@ footer .footer-bottom .footer__bottom--wrapper {
         align-items: center;
         flex-direction: row;
         margin: 0 0 20px 0;
-        border: 1px solid #70869A;
+        border: 1px solid #E2B98D;
         border-radius: 23px;
-        color: #70869A;
+        color: #E2B98D;
         width: 160px;
         height: 160px;
         max-width: 100%;
+        text-align: center;
+        transition: all .4s ease-in-out;
         font-size: 18px;
         line-height: 118%;
-        padding: 50px 40px;
-        text-align: center;
-        transition: all .4s ease-in-out; }
+        padding: 50px 40px; }
         #roomplans-three .tab ul .room-btn:hover {
           cursor: pointer; }
         @media (max-width: 992px) {
@@ -1169,8 +1169,8 @@ footer .footer-bottom .footer__bottom--wrapper {
             margin-right: 20px;
             margin-bottom: 20px; } }
       #roomplans-three .tab ul .room-btn-active {
-        color: white;
-        background-color: #203E65; }
+        color: #E2B98D;
+        background-color: #232323; }
       @media (max-width: 992px) {
         #roomplans-three .tab ul {
           padding: 0; } }

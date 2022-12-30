@@ -40,18 +40,19 @@
                     row
                 );
                 @include margin(0 0 20px 0);
-                @include border(1px solid $gray, 23px);
-                color: $gray;
+                @include border(1px solid $gold-color, 23px);
+                color: $gold-color;
                 width: 160px;
                 height: 160px;
                 max-width: 100%;
+                text-align: center;
+                transition: all .4s ease-in-out;
                 @include textFont(
                     $f_size:18px,
                     $padding:50px 40px,
                     $line_height:118%,
+                    
                 );
-                text-align: center;
-                transition: all .4s ease-in-out;
                 &:hover{
                     cursor: pointer;
                 }
@@ -66,8 +67,8 @@
                 }
             }
             .room-btn-active{
-                color: $white;
-                background-color: $bg-color;
+                color: $gold-color;
+                background-color: $black;
             }
             @media (max-width:992px) {
                 padding: 0;
