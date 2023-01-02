@@ -38,7 +38,7 @@
                 $jus:space-between,
                 $direction:column
             );
-            background-color: #1B2F49;
+            background-color: $black;
             position: relative;
             .top{
                 @include margin(0 0 65px 0);
@@ -65,7 +65,7 @@
                             transition: all .3s ease-in-out;
                             color: inherit;
                             &:hover{
-                                color: $bg-color;
+                                color: $gold-color;
                             }
                         }
                         &:nth-child(2){
@@ -161,6 +161,7 @@
             }
         }
         .map-btn{
+            top: 50% !important;
             left: 44% !important;
             font-size: 18px !important;
             width: 177px;
@@ -206,7 +207,7 @@
                 content: "";
                 width: 70px;
                 height: 3px;
-                background-color: #43AAFF;
+                background-color: $gold-color;
                 bottom: 0;
                 left: 0;
             }
@@ -246,7 +247,7 @@
                 $color:$white,
                 $width:170px,
                 $margin:30px 0 0 0,
-                $bg_color:#43B5E4
+                $bg_color:$gold-color
             );
             &:hover{
                 background-color: $bg-color;

@@ -264,11 +264,12 @@
   z-index: 99999;
   transition: all .3s ease-in-out; }
   .sidebar .modal-dialog {
-    height: auto;
+    height: 100vh;
     border-top-right-radius: 70px; }
     .sidebar .modal-dialog .modal-content {
       border-top-right-radius: 70px;
       padding: 100px 120px;
+      height: 100%;
       background-size: cover; }
       .sidebar .modal-dialog .modal-content::before {
         position: absolute;
@@ -494,7 +495,7 @@
       object-fit: contain;
       position: relative;
       display: block; }
-      @media (min-width: 1920px) {
+      @media (max-width: 1920px) {
         #index-one .index-one-bg img {
           width: 1920px;
           object-fit: contain; } }
@@ -1342,7 +1343,7 @@ footer .footer-bottom .footer__bottom--wrapper {
       display: flex;
       justify-content: space-between;
       flex-direction: column;
-      background-color: #1B2F49;
+      background-color: #232323;
       position: relative; }
       #contact .contact-box-area .left-infos .top {
         margin: 0 0 65px 0; }
@@ -1362,7 +1363,7 @@ footer .footer-bottom .footer__bottom--wrapper {
               transition: all .3s ease-in-out;
               color: inherit; }
               #contact .contact-box-area .left-infos .top ul li a:hover {
-                color: #203E65; }
+                color: #E2B98D; }
             #contact .contact-box-area .left-infos .top ul li:nth-child(2) {
               font-size: 28px;
               font-weight: 600; }
@@ -1425,6 +1426,7 @@ footer .footer-bottom .footer__bottom--wrapper {
             border-radius: 0px;
             height: 400px; } }
     #contact .contact-box-area .map-btn {
+      top: 50% !important;
       left: 44% !important;
       font-size: 18px !important;
       width: 177px;
@@ -1464,7 +1466,7 @@ footer .footer-bottom .footer__bottom--wrapper {
         content: "";
         width: 70px;
         height: 3px;
-        background-color: #43AAFF;
+        background-color: #E2B98D;
         bottom: 0;
         left: 0; }
     #contact-form-area .contact-form-content .description {
@@ -1496,7 +1498,7 @@ footer .footer-bottom .footer__bottom--wrapper {
       padding: 20px 50px;
       border-radius: 31px;
       color: white;
-      background-color: #43B5E4;
+      background-color: #E2B98D;
       font-size: 18px; }
       #contact-form-area .offset-lg-1 .send-btn:hover {
         background-color: #203E65; }
