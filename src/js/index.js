@@ -49,4 +49,13 @@ if (btnAreas) {
       element.classList.add("active-tab");
     }
   });
-};
+}
+document.addEventListener("click", (e) => {
+  const insideSideBar = sidebarbtn.contains(e.target);
+  console.log(e.target);
+  if (!e.target.classList.contains("menu-btn")) {
+    if (!insideSideBar) {
+      sidebarbtn.classList.remove("sidebar-active");
+    }
+  }
+});
