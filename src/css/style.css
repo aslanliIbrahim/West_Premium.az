@@ -279,12 +279,11 @@
         z-index: 0;
         left: 0;
         top: 0;
-        background: linear-gradient(180deg, #0065B8 0%, #203E65 100%);
+        background: linear-gradient(130deg, #232323 31%, #E2B98D 100%);
         opacity: 0.93;
         border-top-right-radius: 69px; }
       .sidebar .modal-dialog .modal-content::after {
         position: absolute;
-        content: url(../img/main/bg-dark.svg);
         bottom: 0;
         left: 0; }
       .sidebar .modal-dialog .modal-content .btn-close {
@@ -293,7 +292,7 @@
         right: -50px;
         transform: translateY(-50%);
         transform: rotate(45deg);
-        border: 1px solid #43B5E4;
+        border: 1px solid #E2B98D;
         width: 100px;
         height: 100px;
         background: none;
@@ -323,7 +322,7 @@
             .sidebar .modal-dialog .modal-content .modal-body .modal-menu li::before {
               content: "0" counter(chapter);
               counter-increment: chapter;
-              color: #A4CAEB;
+              color: #E2B98D;
               font-size: 16px;
               position: absolute;
               transform: translateY(-50%) rotate(-90deg);
@@ -336,7 +335,7 @@
               top: 6px;
               height: 15px;
               width: 2px;
-              background: #43AAFF; }
+              background: #232323; }
         .sidebar .modal-dialog .modal-content .modal-body .bottom-info {
           display: flex;
           align-items: center;
@@ -493,8 +492,7 @@
       max-width: 100%;
       width: 100vw;
       object-fit: contain;
-      position: relative;
-      display: block; }
+      position: relative; }
       @media (max-width: 1920px) {
         #index-one .index-one-bg img {
           width: 1920px;
@@ -517,7 +515,7 @@
 #index-two {
   padding-top: 81px;
   background: linear-gradient(180deg, rgba(255, 241, 225, 0.45) 7.75%, rgba(196, 196, 196, 0) 100%);
-  margin-top: -152px; }
+  margin-top: -110px; }
   #index-two .welcome {
     font-size: 14px;
     font-weight: 400;

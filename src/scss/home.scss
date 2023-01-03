@@ -192,13 +192,13 @@
                 z-index: 0;
                 left: 0;
                 top: 0;
-                background: linear-gradient(180deg, #0065B8 0%, #203E65 100%);
+                background: linear-gradient(130deg, $black 31%, $gold-color 100%);
                 opacity: 0.93;
                 border-top-right-radius: 69px;
             }
             &::after{
                 position: absolute;
-                content: url(../img/main/bg-dark.svg);
+                // content: url(../img/main/bg-dark.svg);
                 bottom: 0;
                 left: 0;
             }
@@ -208,7 +208,7 @@
                 right: -50px;
                 transform: translateY(-50%);
                 transform: rotate(45deg);
-                border: 1px solid #43B5E4;
+                border: 1px solid $gold-color;
                 width: 100px;
                 height: 100px;
                 background: none;
@@ -243,7 +243,7 @@
                         &::before{
                             content: "0" counter(chapter);
                             counter-increment: chapter;
-                            color: #A4CAEB;
+                            color: $gold-color;
                             font-size: 16px;
                             position: absolute;
                             transform: translateY(-50%) rotate(-90deg);
@@ -257,7 +257,7 @@
                             top: 6px;
                             height: 15px;
                             width: 2px;
-                            background: #43AAFF;
+                            background: $black;
                         }
                     }
                 }
@@ -493,7 +493,7 @@
             max-width: 100%;
             width: 100vw;
             object-fit: contain;
-            position: relative;salam qa
+            position: relative;
             @media (max-width:1920px) {
                 width: 1920px;
                 object-fit: contain;
@@ -522,7 +522,7 @@
 #index-two{
     padding-top: 81px;
     background: linear-gradient(180deg, rgba(255, 241, 225, 0.45) 7.75%, rgba(196, 196, 196, 0) 100%);
-    margin-top: -152px;
+    margin-top: -110px;
     .welcome{
         @include textFont(
             $text_weight:400,

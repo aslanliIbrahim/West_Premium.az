@@ -15,7 +15,7 @@ if (close_Btn) {
 }
 const menubtn = document.querySelector(".menu-btn");
 const sidebarbtn = document.querySelector(".sidebar");
-const xbtn = document.querySelector(".cart");
+const xbtn = document.querySelector(".close");
 menubtn.addEventListener("click", function () {
   if (sidebarbtn.classList.contains("sidebar-active")) {
     sidebarbtn.classList.remove("sidebar-active");
@@ -23,9 +23,9 @@ menubtn.addEventListener("click", function () {
     sidebarbtn.classList.add("sidebar-active");
   }
 });
-xbtn.addEventListener("click", function () {
-  sidebarbtn.classList.remove("sidebar-active");
-});
+// xbtn.addEventListener("click", function () {
+//   sidebarbtn.classList.remove("sidebar-active");
+// });
 const btnAreas = document.querySelector(".btn-areas");
 const roomBtns = document.querySelectorAll(".room-btn");
 const tabContent = document.querySelectorAll(".tabcontent");
