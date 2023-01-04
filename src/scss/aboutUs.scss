@@ -18,7 +18,7 @@
             @include textFont(
                 $f_size:46px,
                 $text_weight:700,
-                $f_color:$bg-color,
+                $f_color:$black,
                 $line_height:118%,
                 $margin:15px
             );
@@ -37,15 +37,16 @@
             );
             @include ul(
                 $list-style:none,
-                $pad:0,
+                $pad:0 0 0 3%,
                 $mar:0
             );
             li{
                 margin-right: 40px;
+                color: $black;
                 a{
                     position: relative;
                     text-decoration: none;
-                    color: $gray;
+                    color: $black;
                     transition: all 0.1s ease-in-out;
                     &::before{
                         position: absolute;
@@ -53,7 +54,7 @@
                         right: -30px;
                     }
                     &:hover{
-                        color: $bg-color;
+                        color: $gold-color
                     }
                 }
             }
