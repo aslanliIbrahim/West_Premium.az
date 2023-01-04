@@ -36,11 +36,8 @@ if (btnAreas) {
     if (id) {
       roomBtns.forEach((btn) => {
         btn.classList.remove("room-btn-active");
-        console.log("hello");
       });
       e.target.classList.add("room-btn-active");
-      console.log("added");
-
       tabContent.forEach((tabcontent) => {
         tabcontent.classList.remove("active-tab");
         console.log("removed");

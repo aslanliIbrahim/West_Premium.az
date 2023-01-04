@@ -53,7 +53,7 @@
     }
     .project-box{
         width: 90%;
-        background: #43AAFF;
+        background: $black;
         @include border( $border-radius:19px );
         @include margin(0 0 30px 0);
         @include padding(30px 7px);
